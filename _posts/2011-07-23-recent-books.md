@@ -36,7 +36,7 @@ A great set of stories set in the Warhammer 40,000 universe, following Ragnar on
 
 ### Vitals - Greg Bear
 
-A story about bacteria, the Soviet Union and people attempting to find eternal youth. Not convinced? I thought it was great!</li>
+A story about bacteria, the Soviet Union and people attempting to find eternal youth. Not convinced? I thought it was great!
 
 - - -
 

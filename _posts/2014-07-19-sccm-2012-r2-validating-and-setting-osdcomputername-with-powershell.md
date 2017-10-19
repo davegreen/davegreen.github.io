@@ -14,7 +14,7 @@ The solution I found that almost did what I wanted can be found [here](http://ww
 
 To run the script, a few things have to be done first (Instructions with screenshots can be found in Nickolaj's post on scconfigmgr.com.
 
-- Add the 'WinPE-NetFx' and 'WinPE-Powershell' features to the boot image you will be using with the OSD. (in "Boot Images &gt; Boot image &gt; Properties &gt; Optional components")
+- Add the 'WinPE-NetFx' and 'WinPE-Powershell' features to the boot image you will be using with the OSD. (in "Boot Images > Boot image > Properties > Optional components")
 - Download a copy of [MDT](http://technet.microsoft.com/en-gb/windows/dn475741.aspx) that matches the boot image architecture you want (x86/x64), then extract the ServiceUI.exe file from it, usually located at "%ProgramFiles%\Microsoft Deployment Toolkit\Templates\Distribution\Tools"
 - Create an SCCM package containing the script, plus ServiceUI, but don't create a program for it, as we'll deal with that bit when adding it to the task sequence.
 
@@ -37,7 +37,7 @@ Next, I wanted to remove the silent removal of user input and make it obvious to
 This meant that instead of having:
 
     else {
-        $OSDComputerName = $TBComputerName.Text.Replace("[","").Replace("]","").Replace(":","").Replace(";","").Replace("|","").Replace("=","").Replace("+","").Replace("*","").Replace("?","").Replace("&lt;","").Replace("&gt;","").Replace("/","").Replace("\","").Replace(",","")
+        $OSDComputerName = $TBComputerName.Text.Replace("[","").Replace("]","").Replace(":","").Replace(";","").Replace("|","").Replace("=","").Replace("+","").Replace("*","").Replace("?","").Replace("<","").Replace(">","").Replace("/","").Replace("\","").Replace(",","")
         $TSEnv = New-Object -COMObject Microsoft.SMS.TSEnvironment
         $TSEnv.Value("OSDComputerName") = "$($OSDComputerName)"
         $Form.Close()

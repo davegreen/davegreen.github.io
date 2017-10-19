@@ -25,7 +25,7 @@ I've set up the files I need in the following hierarchy, and spread the BIOS con
         BIOSPW.bin              (Encrypted BIOS password)
         HPBIOSUPDREC.exe        (New BIOS update utility)
         hpqFlash.exe            (Old BIOS update utility)
-        ProBook6x70bBIOS.cab    (HP Probook 6x70b BIOS file)</pre>
+        ProBook6x70bBIOS.cab    (HP Probook 6x70b BIOS file)
 
 ##### NOTE
 

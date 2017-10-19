@@ -11,23 +11,26 @@ I got asked a little while ago if SCOM could query an SQL database and generate 
 Somehow I've managed to get a long way without doing any real SCOM Management Pack authoring... Until now! This made my day a nice learning curve,
 
 Here's the summary of how I went about it.
-<ul>
-	<li>Create a new Management Pack (MP) to contain the changes.</li>
-	<li>Create the run as profile in the MP.</li>
-	<li>Create the monitor in the MP.</li>
-	<li>Export the management pack.</li>
-	<li>Add the run as reference to the monitor.</li>
-	<li>Re-import the management pack.</li>
-	<li>Complete the configuration, set up alerting and overrides, etc.</li>
-</ul>
+
+- Create a new Management Pack (MP) to contain the changes.
+- Create the run as profile in the MP.
+- Create the monitor in the MP.
+- Export the management pack.
+- Add the run as reference to the monitor.
+- Re-import the management pack.
+- Complete the configuration, set up alerting and overrides, etc.
+
 To make things easier we create the framework of the monitor and the run as profile first, to make the manual editing step easier.
+
 # Sources
+
 Massive thanks to the following people and everyone posting about SCOM stuff, a lot of this stuff would be incredibly difficult without their help.
-<ul>
-	<li>Stefan Stranger - [Associating Run As Accounts to monitors](http://cid-3ac99c5995164f2b.skydrive.live.com/self.aspx/files/Steps-to-Associate-Run-As-Account-to-monitor.1.0.pdf) ([Mirror](http://tookitaway.co.uk/wp-content/uploads/2015/10/Steps-to-Associate-Run-As-Account-to-monitor.1.0.pdf))</li>
-	<li>Pete Zerger - [How to create a 2 state script monitor](http://www.systemcentercentral.com/wp-content/uploads/2009/04/HOW-TO_2-state_ScriptMonitor.pdf) ([Mirror](http://tookitaway.co.uk/wp-content/uploads/2015/10/HOW-TO_2-state_ScriptMonitor.pdf))</li>
-</ul>
+
+- Stefan Stranger - [Associating Run As Accounts to monitors](http://cid-3ac99c5995164f2b.skydrive.live.com/self.aspx/files/Steps-to-Associate-Run-As-Account-to-monitor.1.0.pdf) ([Mirror](http://tookitaway.co.uk/wp-content/uploads/2015/10/Steps-to-Associate-Run-As-Account-to-monitor.1.0.pdf))
+- Pete Zerger - [How to create a 2 state script monitor](http://www.systemcentercentral.com/wp-content/uploads/2009/04/HOW-TO_2-state_ScriptMonitor.pdf) ([Mirror](http://tookitaway.co.uk/wp-content/uploads/2015/10/HOW-TO_2-state_ScriptMonitor.pdf))
+
 # Create a new Management Pack (MP) to contain the changes
+
 I started by creating a management pack for whatever monitors I create using this method, since it will need editing. This should help to keep things tidy, allowing me to isolate the changes I'm making from the rest of the system, as is good practice.
 
 Browse to Administration, then right-click on "Management Packs" and choose to create a new management pack.
@@ -35,14 +38,18 @@ Browse to Administration, then right-click on "Management Packs" and choose to c
 [<img class="alignnone wp-image-1579 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2015/10/MPCreate.png" alt="MPCreate" width="560" height="566" />](http://tookitaway.co.uk/wp-content/uploads/2015/10/MPCreate.png)
 
 I've named and described my management pack, obviously these will be different in your case.
+
 # Create the run as profile in the MP
+
 Browse to the Administration tab, then right-click "Run As Configuration" and choose to "Create Run As Profile..."
 
 [<img class="alignnone size-full wp-image-1591" src="http://tookitaway.co.uk/wp-content/uploads/2015/10/CreateRunAsProfile.png" alt="CreateRunAsProfile" width="852" height="689" />](http://tookitaway.co.uk/wp-content/uploads/2015/10/CreateRunAsProfile.png)
 
 Name and describe the profile how you need it, then choose to put it in the management pack we created. Add the run account you need, then create it.
+
 # Create the monitor in the MP
-To create the monitor, I browsed to the Authoring tab, then to "Management Pack Objects &gt; Monitors" and filtered the scope to the following "SQL Server YYYY DB", depending on the SQL Server version containing the database you need to target. I'll be working with SQL Server 2014 for this example, but this method applies to all recent versions of SQL server.
+
+To create the monitor, I browsed to the Authoring tab, then to "Management Pack Objects > Monitors" and filtered the scope to the following "SQL Server YYYY DB", depending on the SQL Server version containing the database you need to target. I'll be working with SQL Server 2014 for this example, but this method applies to all recent versions of SQL server.
 
 [<img class="alignnone size-large wp-image-1582" src="http://tookitaway.co.uk/wp-content/uploads/2015/10/MonitorList-1024x546.png" alt="MonitorList" width="474" height="253" />](http://tookitaway.co.uk/wp-content/uploads/2015/10/MonitorList.png)
 
@@ -71,18 +78,26 @@ Now we have the script and the parameters sorted out, we can turn our attention 
 [<img class="alignnone size-full wp-image-1590" src="http://tookitaway.co.uk/wp-content/uploads/2015/10/CreateScriptMonitor-6.png" alt="CreateScriptMonitor-6" width="782" height="734" />](http://tookitaway.co.uk/wp-content/uploads/2015/10/CreateScriptMonitor-6.png)
 
 We can grab the data from the property bag returned by the script and use the details in the health expression by grabbing the property by name as shown. Since this is a test monitor and isn't really critical, I'm going to leave the "Configure Health" step as default, and not configure an alert yet, then create the monitor.
+
 # Export the management pack
+
 To export the management pack, browse back to the management pack we created at the beginning, right click it and choose to export it. This will give you an XML file we can go ahead and edit.
+
 # Add the run as reference to the monitor
-I've attached the original and the run as versions of the management pack here, showing <em>almost</em> no difference between the two files! All I've done is bump up the version number and add the "SecureReference" ID from the secure references section to the chosen UnitMonitor. It's a little easier this way than adding the secure reference from scratch and makes the whole process a bit quicker.
+
+I've attached the original and the run as versions of the management pack here, showing *almost* no difference between the two files! All I've done is bump up the version number and add the "SecureReference" ID from the secure references section to the chosen UnitMonitor. It's a little easier this way than adding the secure reference from scratch and makes the whole process a bit quicker.
 
 [Here's the diff between the two files on GitHub](https://gist.github.com/davegreen/9b4d6da5ef1a883bd5c4/revisions).
+
 # Re-import the management pack
+
 To re-import the management pack, import the MP back from disk. Make sure you don't change the filename, as this will cause issues with importing, as will any XML validation errors that may have been introduced.
+
 # Complete the configuration
+
 Now we've got over all that, we can now apply an override and try out the monitor!
 
-Navigate back to the Authoring tab and find the monitor you created earlier. Right click it, choose "Overrides &gt; Override the monitor &gt; For a specific object of class: SQL Server YYYY DB". Choose the database you want this monitor to apply to, then click OK.
+Navigate back to the Authoring tab and find the monitor you created earlier. Right click it, choose "Overrides > Override the monitor > For a specific object of class: SQL Server YYYY DB". Choose the database you want this monitor to apply to, then click OK.
 
 [<img class="alignnone size-full wp-image-1593" src="http://tookitaway.co.uk/wp-content/uploads/2015/10/CreateOverride.png" alt="CreateOverride" width="720" height="739" />](http://tookitaway.co.uk/wp-content/uploads/2015/10/CreateOverride.png)
 

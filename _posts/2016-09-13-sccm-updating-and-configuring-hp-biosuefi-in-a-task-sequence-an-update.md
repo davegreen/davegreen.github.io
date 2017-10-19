@@ -28,7 +28,7 @@ I've set up the package for HP machines I need to configure and update as follow
         N75_0110.bin (UEFI firmware - EliteBook 8x0 G3)
         N21_0219.bin (UEFI firmware - EliteDesk 800 G2 SFF)
         UpdateBIOS.cmd (UEFI update command file HPqflash models)
-        UpdateUEFI.cmd (UEFI update command file HPBIOSUPDREC models)</pre>
+        UpdateUEFI.cmd (UEFI update command file HPBIOSUPDREC models)
 
 A sample set of files for all of this can be [found on GitHub](https://github.com/davegreen/miscellaneous/tree/master/SCCMPackages/HP-UEFI), except the HP binaries and firmware, which need to be downloaded from HP.
 
