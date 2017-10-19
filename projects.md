@@ -13,11 +13,9 @@ categories: []
 
 Assorted random snippets of code I have written and find useful.
 
-### [Timezone](http://tookitaway.co.uk/powershell-timezone-module-psgallery/)
+### [Timezone](https://www.powershellgallery.com/packages/Timezone/)
 
-[Source (GitHub)](https://github.com/davegreen/PowerShell/tree/master/Modules/Timezone)
-
-A PowerShell module for getting and setting the system timezone, like tzutil (and uses tzutil), but for PowerShell!
+A PowerShell module for getting and setting the system timezone, like tzutil (and uses tzutil), but for PowerShell! [Source (GitHub)](https://github.com/davegreen/PowerShell/tree/master/Modules/Timezone)
 
 ### [ShadowGroupSync](https://github.com/davegreen/shadowGroupSync)
 
@@ -27,7 +25,7 @@ A PowerShell script for managing Active Directory shadow groups.
 
 PiCentralHeating - A combo hardware/software project for a low cost central heating system controller, designed to run on the Raspberry Pi.
 
-PiCH temperature board
+PiCH temperature board image
 
 ### [backupDHCPLogs](https://github.com/davegreen/backupDhcpLogs.git)
 
