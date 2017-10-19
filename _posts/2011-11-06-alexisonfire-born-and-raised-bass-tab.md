@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [Alexisonfire - Born And Raised](http://tookitaway.co.uk/assets/music/tabs/BAR.txt)
+Download the text file -  [Alexisonfire - Born And Raised](../assets/music/tabs/BAR.txt)
 
     Title:  Born And Raised
     Artist: Alexisonfire

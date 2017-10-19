@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [Twin Atlantic - Free](http://tookitaway.co.uk/assets/music/tabs/F.txt)
+Download the text file -  [Twin Atlantic - Free](../assets/music/tabs/F.txt)
 
     Title: Free
     Artist: Twin Atlantic

@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [A - Good Time](http://tookitaway.co.uk/assets/music/tabs/GT.txt)
+Download the text file -  [A - Good Time](../music/tabs/GT.txt)
 
     Title: Good Time
     Artist: A

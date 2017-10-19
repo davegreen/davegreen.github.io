@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [A Change Of Pace - Loose Lips Sink Ships](http://tookitaway.co.uk/assets/music/tabs/LLSS.txt)
+Download the text file -  [A Change Of Pace - Loose Lips Sink Ships](../assets/music/tabs/LLSS.txt)
 
     Title: Loose Lips Sink Ships
     Artist: A Change Of Pace

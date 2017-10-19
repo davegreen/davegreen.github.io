@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [Four Letter Lie - Nothing But A Ghost](http://tookitaway.co.uk/assets/music/tabs/NBAG.txt)
+Download the text file -  [Four Letter Lie - Nothing But A Ghost](../assets/music/tabs/NBAG.txt)
 
     Title:  Nothing But A Ghost
     Artist: Four Letter Lie

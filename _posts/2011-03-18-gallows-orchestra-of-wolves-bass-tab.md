@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file - [Gallows - Orchestra Of Wolves](http://tookitaway.co.uk/assets/music/tabs/OOW.txt)
+Download the text file - [Gallows - Orchestra Of Wolves](../assets/music/tabs/OOW.txt)
 
     Title: Orchestra Of Wolves
     Artist: Gallows

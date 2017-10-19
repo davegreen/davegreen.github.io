@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [Deaf Havana - Friends Like These](http://tookitaway.co.uk/assets/music/tabs/FLT.txt)
+Download the text file -  [Deaf Havana - Friends Like These](../assets/music/tabs/FLT.txt)
 
     Title: Friends Like These
     Artist: Deaf Havana

@@ -7,7 +7,7 @@ comments: true
 categories: [Music]
 ---
 
-Download the text file - [Gallows - Abandon Ship](http://tookitaway.co.uk/assets/music/tabs/AS.txt)
+Download the text file - [Gallows - Abandon Ship](../assets/music/tabs/AS.txt)
 
     Title: Abandon Ship
     Artist: Gallows

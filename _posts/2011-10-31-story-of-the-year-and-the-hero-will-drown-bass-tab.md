@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [Story Of The Year - And The Hero Will Drown](http://tookitaway.co.uk/assets/music/tabs/ATHWD.txt)
+Download the text file -  [Story Of The Year - And The Hero Will Drown](../assets/music/tabs/ATHWD.txt)
 
     Title:  And The Hero Will Drown
     Artist: Story Of The Year

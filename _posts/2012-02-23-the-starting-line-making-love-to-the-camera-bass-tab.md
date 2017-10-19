@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [The Starting Line - Making Love To The Camera](http://tookitaway.co.uk/assets/music/tabs/MLTTC.txt)
+Download the text file -  [The Starting Line - Making Love To The Camera](../assets/music/tabs/MLTTC.txt)
 
     Title: Making Love To The Camera
     Artist: The Starting Line

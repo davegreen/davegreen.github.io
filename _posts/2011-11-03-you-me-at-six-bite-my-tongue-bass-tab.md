@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [You Me At Six - Bite My Tongue](http://tookitaway.co.uk/assets/music/tabs/BMT.txt)
+Download the text file -  [You Me At Six - Bite My Tongue](../assets/music/tabs/BMT.txt)
 
     Title:  Bite My Tongue
     Artist: You Me At Six

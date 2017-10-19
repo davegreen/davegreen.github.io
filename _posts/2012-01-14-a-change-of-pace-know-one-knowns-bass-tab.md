@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [A Change Of Pace - Know One Knowns](http://tookitaway.co.uk/assets/music/tabs/KOK.txt)
+Download the text file -  [A Change Of Pace - Know One Knowns](../assets/music/tabs/KOK.txt)
 
     Title: Know One Knowns
     Artist: A Change Of Pace
