@@ -2,13 +2,13 @@
 layout: post
 title: Backup DHCP Logs with Powershell
 date: 2013-05-24 10:40
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
 I've uploaded another little Powershell script to GitHub, as a module this time!
 
-It's called <a href="https://github.com/davegreen/backupDhcpLogs.git">backupDhcpLogs</a> and it tries to do what it says on the tin. Of course, if you couldn't read the tin, it's a module to back up DHCP logs.
+It's called [backupDhcpLogs](https://github.com/davegreen/backupDhcpLogs.git) and it tries to do what it says on the tin. Of course, if you couldn't read the tin, it's a module to back up DHCP logs.
 
 Currently it backs up the previous days of logs to a destination you specify and will also remove logs from the destination that are older than a number of days you specify. There is also the option to back up the DHCP server configuration if you so wish.
 

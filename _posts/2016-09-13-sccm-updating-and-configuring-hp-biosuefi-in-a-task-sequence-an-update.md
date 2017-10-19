@@ -2,13 +2,13 @@
 layout: post
 title: SCCM – Updating and configuring HP BIOS/UEFI in a task sequence - An update
 date: 2016-09-13 23:20
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
 Lately I've bee working on a little more SCCM operating system deployment work and I've got an updated toolset for configuring and updating UEFI firmware for HP machines easily in a task sequence. This is a reasonably long post, so bear with me.
 
-A lot of the same techniques <a href="http://tookitaway.co.uk/tag/hp-bios-configuration-utility/">from my earlier posts</a> on the subject apply. We are still using HPBIOSUPDREC, BiosConfigUtility and an SCCM package for the source files. I've updated the batch files to take an argument for the configuration or update file, as well as the previous architecture detection. The good thing about this method is that it supports all current HP laptop, desktop and workstation models with no change, you just give the update file, or the configuration as an argument and away you go.
+A lot of the same techniques [from my earlier posts](http://tookitaway.co.uk/tag/hp-bios-configuration-utility/) on the subject apply. We are still using HPBIOSUPDREC, BiosConfigUtility and an SCCM package for the source files. I've updated the batch files to take an argument for the configuration or update file, as well as the previous architecture detection. The good thing about this method is that it supports all current HP laptop, desktop and workstation models with no change, you just give the update file, or the configuration as an argument and away you go.
 
 I considered using PowerShell for this, however it takes a little while to start in WinPE and unless I add more logic to the process for particular models or action types, I don't see the need to convert it yet.
 
@@ -30,7 +30,7 @@ I've set up the package for HP machines I need to configure and update as follow
     UpdateBIOS.cmd (UEFI update command file HPqflash models)
     UpdateUEFI.cmd (UEFI update command file HPBIOSUPDREC models)</pre>
 
-A sample set of files for all of this can be <a href="https://github.com/davegreen/miscellaneous/tree/master/SCCMPackages/HP-UEFI">found on GitHub</a>, except the HP binaries and firmware, which need to be downloaded from HP.
+A sample set of files for all of this can be [found on GitHub](https://github.com/davegreen/miscellaneous/tree/master/SCCMPackages/HP-UEFI), except the HP binaries and firmware, which need to be downloaded from HP.
 
 You can follow the larger package format, with all models together, or spread the update and configuration files over multiple packages, whichever suits your requirements best.
 
@@ -52,13 +52,13 @@ We can use the same SCCM 'Run command line' task we used in the past for this, 
 
 This is the configure command line:
 
-<a href="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Configure.png"><img class="alignnone size-full wp-image-1716" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Configure.png" alt="command-line-configure" width="466" height="246" /></a>
+[<img class="alignnone size-full wp-image-1716" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Configure.png" alt="command-line-configure" width="466" height="246" />](http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Configure.png)
 
 Followed by the update command line, along with the success exit codes shown.
 
-<a href="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Update.png"><img class="alignnone size-large wp-image-1717" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Update.png" alt="command-line-update" width="466" height="244" /></a>
+[<img class="alignnone size-large wp-image-1717" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Update.png" alt="command-line-update" width="466" height="244" />](http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Update.png)
 
-<a href="http://tookitaway.co.uk/wp-content/uploads/2016/09/Update-Exit-Codes.png"><img class="alignnone size-large wp-image-1718" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Update-Exit-Codes.png" alt="update-exit-codes" width="468" height="135" /></a>
+[<img class="alignnone size-large wp-image-1718" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Update-Exit-Codes.png" alt="update-exit-codes" width="468" height="135" />](http://tookitaway.co.uk/wp-content/uploads/2016/09/Update-Exit-Codes.png)
 
 The update command line needs to follow the configure step if as it requires a password bin file.
 

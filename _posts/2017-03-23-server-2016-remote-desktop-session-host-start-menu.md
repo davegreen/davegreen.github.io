@@ -2,7 +2,7 @@
 layout: post
 title: Server 2016 - Remote Desktop Session Host Start Menu
 date: 2017-03-23 23:05
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -38,7 +38,7 @@ Computer: RDSH.domain.local
 Description:
 ActivateApplicationForContractByAppIdAsUserWithHost of the app Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy!App for the Windows.Launch contract failed with Install failed. Please contact your software vendor..</pre>
 
-We also tried trusty <a href="https://technet.microsoft.com/en-us/sysinternals/processmonitor.aspx">ProcMon</a> (nothing obviously access denied or wrong), all that would happen WerFault.exe would appear when trying to run ShellExperienceHost.exe manually.
+We also tried trusty [ProcMon](https://technet.microsoft.com/en-us/sysinternals/processmonitor.aspx) (nothing obviously access denied or wrong), all that would happen WerFault.exe would appear when trying to run ShellExperienceHost.exe manually.
 
 <pre>Log Name: Application
 Source: Application Error

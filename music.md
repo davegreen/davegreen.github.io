@@ -2,7 +2,7 @@
 layout: page
 title: Music
 date: 2011-07-22 19:17
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: SCEP 2012 R2 / FEP 2010 - May Update Manual Download Links (KB3049560)
 date: 2015-05-17 17:52
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -13,7 +13,7 @@ Unfortunately, I hoped the ADMX template for managing SCEP 2012 that was mention
 As I've done previously, I pulled these download links from SCCM, viewing the Content Information in the update view for KB3049560.
 
 Here's the update, it appears to be the same for both FEP 2010 and SCEP 2012:
-<a href="http://wsus.ds.download.windowsupdate.com/c/msdownload/update/software/crup/2015/05/updateinstall_a4deb3eebd3ac19f8b465097d818708a0e0d87c7.exe">wsus.ds.download.windowsupdate.com/c/msdownload/update/software/crup/2015/05/updateinstall_a4deb3eebd3ac19f8b465097d818708a0e0d87c7.exe</a>
+[wsus.ds.download.windowsupdate.com/c/msdownload/update/software/crup/2015/05/updateinstall_a4deb3eebd3ac19f8b465097d818708a0e0d87c7.exe](http://wsus.ds.download.windowsupdate.com/c/msdownload/update/software/crup/2015/05/updateinstall_a4deb3eebd3ac19f8b465097d818708a0e0d87c7.exe)
 
 These files are hosted by Microsoft and may disappear at any time!
 

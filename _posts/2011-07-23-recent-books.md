@@ -2,7 +2,7 @@
 layout: post
 title: Recent Books
 date: 2011-07-23 14:27
-author: dave
+author: Dave Green
 comments: true
 categories: [Books]
 ---

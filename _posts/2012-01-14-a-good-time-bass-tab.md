@@ -2,11 +2,11 @@
 layout: post
 title: A - Good Time Bass Tab
 date: 2012-01-14 18:36
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/GT.txt">A - Good Time</a>
+Download the text file -  [A - Good Time](http://tookitaway.co.uk/wp-content/uploads/2012/01/GT.txt)
 
 <!--more-->
 <pre>Title: Good Time

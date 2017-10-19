@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft Dynamics AX 2012 - Importing and exporting users with PowerShell
 date: 2014-12-23 20:38
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -14,11 +14,11 @@ Unfortunately the AX module need to be loaded in a wonderfully manual way and t
 
 Even lacking these things, it's still PowerShell, so I soldiered on. It took a little while and some features still have to be implemented, but the two scripts allow users to be imported and exported to/from a CSV, which is good enough to release for a first version.
 
-The two scripts can be <a href="https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX">downloaded from GitHub</a>.
+The two scripts can be [downloaded from GitHub](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX).
 
 <ul>
-    <li><a href="https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Import-AXUser.ps1">Import-AXUser.ps1</a></li>
-    <li><a href="https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Export-AXUser.ps1">Export-AXUser.ps1</a></li>
+    <li>[Import-AXUser.ps1](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Import-AXUser.ps1)</li>
+    <li>[Export-AXUser.ps1](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Export-AXUser.ps1)</li>
 </ul>
 
 There are also some features I'll implement if I get the time, such as complete overwrite on import and support for importing/exporting user data from remote servers.

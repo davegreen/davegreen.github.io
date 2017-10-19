@@ -2,7 +2,7 @@
 layout: post
 title: Synchronizing DHCP reservations between two DHCP servers serving the same scope
 date: 2016-06-23 19:44
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---

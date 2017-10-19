@@ -2,11 +2,11 @@
 layout: post
 title: A Change Of Pace - Loose Lips Sink Ships Bass Tab
 date: 2012-02-23 19:24
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/02/LLSS.txt">A Change Of Pace - Loose Lips Sink Ships</a>
+Download the text file -  [A Change Of Pace - Loose Lips Sink Ships](http://tookitaway.co.uk/wp-content/uploads/2012/02/LLSS.txt)
 
 <!--more-->
 <pre>Title: Loose Lips Sink Ships

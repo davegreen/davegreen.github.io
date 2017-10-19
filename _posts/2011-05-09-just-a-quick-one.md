@@ -2,7 +2,7 @@
 layout: post
 title: Just a quick one
 date: 2011-05-09 09:47
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---

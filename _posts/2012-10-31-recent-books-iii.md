@@ -2,7 +2,7 @@
 layout: post
 title: Recent Books III
 date: 2012-10-31 23:29
-author: dave
+author: Dave Green
 comments: true
 categories: [Books]
 ---

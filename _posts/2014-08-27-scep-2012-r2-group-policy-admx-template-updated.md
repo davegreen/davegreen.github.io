@@ -2,7 +2,7 @@
 layout: post
 title: SCEP 2012 R2 – Group Policy ADMX Template Updated
 date: 2014-08-27 22:00
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -13,6 +13,6 @@ Fortunately, there is an option in the SCCM Endpoint Protection policies, so I k
 The value for this is "UILockdown" and is found next to the other UX configuration settings for SCEP:
 <pre>HKLM\<span style="color: #333333;">Software\Policies\Microsoft\Microsoft Antimalware\UX Configuration\UILockdown
 (1 for disabled, 0 for enabled)</span></pre>
-I've updated the ADMX template to make this new setting visible, the changes I've made to the template are <a href="https://github.com/davegreen/miscellaneous/commit/8f77ebd4fd70dfe8a410d9a1a4699bd126f77097">here for the ADMX</a> and <a href="https://github.com/davegreen/miscellaneous/commit/1420cb6ab81a574b7115a98c531b7ad13c7132b7">here for the ADML</a>.
+I've updated the ADMX template to make this new setting visible, the changes I've made to the template are [here for the ADMX](https://github.com/davegreen/miscellaneous/commit/8f77ebd4fd70dfe8a410d9a1a4699bd126f77097) and [here for the ADML](https://github.com/davegreen/miscellaneous/commit/1420cb6ab81a574b7115a98c531b7ad13c7132b7).
 
-The files can be <a href="https://github.com/davegreen/miscellaneous/tree/master/CustomADMX">downloaded here</a>. I'll also continue to update the template as I find other settings that weren't present in FEP 2010.
+The files can be [downloaded here](https://github.com/davegreen/miscellaneous/tree/master/CustomADMX). I'll also continue to update the template as I find other settings that weren't present in FEP 2010.

@@ -2,7 +2,7 @@
 layout: post
 title: MacOSX (10.6) Managed Preferences without OSX Server
 date: 2011-07-25 22:22
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -12,7 +12,7 @@ I don't understand why Apple don't just give people the pre-made ldif file, wi
 
 Anyway, below is the correctly configured ldif file that will add the required attributes and classes to an AD schema. The environment I tested it in was a standard AD, with schema extensions for System Center Configuration Manager (SSCM) applied.
 <blockquote>The following file is supplied with absolutely no guarantees and may in fact cause your Active Directory environment to spontaneously combust, or develop an unhealthy craving for human brains.
-<pre><a href="http://tookitaway.co.uk/wp-content/uploads/2011/07/ADSchemaExtension_OSX10.6.ldif_.txt">ADSchemaExtension_OSX10.6.ldif</a></pre>
+<pre>[ADSchemaExtension_OSX10.6.ldif](http://tookitaway.co.uk/wp-content/uploads/2011/07/ADSchemaExtension_OSX10.6.ldif_.txt)</pre>
 </blockquote>
 You should add this schema modification to the AD schema, by using the following command:
 <blockquote>
@@ -22,8 +22,8 @@ If you run this command on the schema master, you can omit the username/password
 <blockquote>
 <pre>ldifde -i -u -f ADSchemaExtension_OSX10.6.ldif -j . -c "cn=Configuration,dc=X" #configurationNamingContext</pre>
 </blockquote>
-More information on ldifde is in the <a href="http://technet.microsoft.com/en-us/library/cc731033(WS.10).aspx">technet article for ldifde</a>.
+More information on ldifde is in the [technet article for ldifde](http://technet.microsoft.com/en-us/library/cc731033(WS.10).aspx).
 
 Once the schema has been extended, you can treat the AD as a direct replacement for the OSX Open Directory Server in regards to managing preferences.
 
-The next step is to join your Macs to the domain with the AD connector and set up your administration machine to control preferences for Macs in the domain, by installing the <a href="http://support.apple.com/downloads/Server_Admin_Tools_10_6">Server Admin Tools</a> for OSX 10.6.
+The next step is to join your Macs to the domain with the AD connector and set up your administration machine to control preferences for Macs in the domain, by installing the [Server Admin Tools](http://support.apple.com/downloads/Server_Admin_Tools_10_6) for OSX 10.6.

@@ -2,11 +2,11 @@
 layout: post
 title: SCCM 2012 R2 – Updating and configuring HP ProBook 6470b/6570b BIOS in a task sequence – Part 2
 date: 2014-08-01 12:31
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
-If you've come to this post directly, you may want to <a href="http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-1/">read through part 1</a>! If not, read on...
+If you've come to this post directly, you may want to [read through part 1](http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-1/)! If not, read on...
 
 In this part, we'll cover putting the files we've got together in a couple of packages and putting them into a task sequence. We'll also be using WMI to query the computer model, so we don't try updating the BIOS on a machine it certainly won't work on.
 
@@ -35,14 +35,14 @@ This batch file picks the correct version of BiosConfigUtility to run (x86 or x6
 
 However if it fails for some reason (i.e. there's a BIOS password set) It then runs the second command, which attempts to set the configuration, using the current password. I've yet to properly test a parameterized version of this, to allow the configuration to be specified outside of the batch file.
 
-<a href="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigprops.png"><img class="alignnone wp-image-1322 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigprops.png" alt="biosconfigprops" width="544" height="450" /></a>
+[<img class="alignnone wp-image-1322 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigprops.png" alt="biosconfigprops" width="544" height="450" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigprops.png)
 
 This is run in the SCCM task sequence, at the beginning, before provisioning or enabling Bitlocker, but after formatting the drive, so that on the reboot that occurs directly afterward, using an "Restart Computer" task, the boot image can be successfully staged to the hard disk.
 
-<a href="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigopts.png"><img class="alignnone wp-image-1324 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigopts.png" alt="biosconfigopts" width="546" height="508" /></a>
+[<img class="alignnone wp-image-1324 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigopts.png" alt="biosconfigopts" width="546" height="508" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigopts.png)
 
 The options base the running of this task on the computer model name, so that we dont try to configure an incompatible BIOS or some other crazy situation. It's not too clear in the image, but I'm using the single character wildcard "_" in the model - "SELECT * FROM Win32_ComputerSystem WHERE Model LIKE "HP ProBook 6_70b""
 
 Hopefully this has covered everything that's needed for yourself to go forth and configure the HP ProBook BIOS in an unattended way! As with most of my posts, please let me know if you've discovered improvements or inaccuracies and I'll attempt to right them!
 
-Read on, where I cover the flashing of the BIOS in <a href="http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-3/">part three</a>.
+Read on, where I cover the flashing of the BIOS in [part three](http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-3/).

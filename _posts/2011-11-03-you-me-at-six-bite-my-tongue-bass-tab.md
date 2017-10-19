@@ -2,11 +2,11 @@
 layout: post
 title: You Me At Six - Bite My Tongue Bass Tab
 date: 2011-11-03 00:31
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/BMT.txt">You Me At Six - Bite My Tongue</a>
+Download the text file -  [You Me At Six - Bite My Tongue](http://tookitaway.co.uk/wp-content/uploads/2012/01/BMT.txt)
 
 <!--more-->
 <pre>Title:  Bite My Tongue

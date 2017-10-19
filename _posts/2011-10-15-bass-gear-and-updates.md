@@ -2,7 +2,7 @@
 layout: post
 title: Bass gear and Updates
 date: 2011-10-15 01:24
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---

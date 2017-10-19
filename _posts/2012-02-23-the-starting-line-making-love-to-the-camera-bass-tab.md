@@ -2,11 +2,11 @@
 layout: post
 title: The Starting Line - Making Love To The Camera Bass Tab
 date: 2012-02-23 22:13
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/02/MLTTC.txt">The Starting Line - Making Love To The Camera</a>
+Download the text file -  [The Starting Line - Making Love To The Camera](http://tookitaway.co.uk/wp-content/uploads/2012/02/MLTTC.txt)
 
 <!--more-->
 <pre>Title: Making Love To The Camera

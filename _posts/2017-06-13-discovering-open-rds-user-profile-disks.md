@@ -2,7 +2,7 @@
 layout: post
 title: Discovering Open RDS User Profile Disks
 date: 2017-06-13 11:38
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -12,3 +12,4 @@ Very occasionally, we have a problem with Remote Desktop User Profile Disks (UPD
 
 After this, you can then take action to unmount it and then deal with the disk. Anyways, here's the script!
 
+Script to be posted, sorry!

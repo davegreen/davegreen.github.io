@@ -2,7 +2,7 @@
 layout: post
 title: Changing the 'Howdy, user' on the toolbar for WordPress
 date: 2012-03-10 23:59
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -12,4 +12,4 @@ It's very basic, all it does is change the 'Howdy' text in the toolbar (front an
 
 It was good fun to write, so here it is!
 
-<a href="http://tookitaway.co.uk/wp-content/uploads/2012/03/wp-alterhowdy.zip">WP-AlterHowdy</a>
+[WP-AlterHowdy](http://tookitaway.co.uk/wp-content/uploads/2012/03/wp-alterhowdy.zip)

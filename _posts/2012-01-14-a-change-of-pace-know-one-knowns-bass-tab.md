@@ -2,11 +2,11 @@
 layout: post
 title: A Change Of Pace - Know One Knowns Bass Tab
 date: 2012-01-14 20:07
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/KOK.txt">A Change Of Pace - Know One Knowns</a>
+Download the text file -  [A Change Of Pace - Know One Knowns](http://tookitaway.co.uk/wp-content/uploads/2012/01/KOK.txt)
 
 <!--more-->
 <pre>Title: Know One Knowns

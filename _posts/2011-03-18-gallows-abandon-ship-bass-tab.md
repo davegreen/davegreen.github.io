@@ -2,7 +2,7 @@
 layout: post
 title: Gallows - Abandon Ship Bass Tab
 date: 2011-03-18 16:43
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---

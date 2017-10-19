@@ -2,11 +2,11 @@
 layout: post
 title: Story Of The Year - And The Hero Will Drown Bass Tab
 date: 2011-10-31 23:58
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/ATHWD.txt">Story Of The Year - And The Hero Will Drown</a>
+Download the text file -  [Story Of The Year - And The Hero Will Drown](http://tookitaway.co.uk/wp-content/uploads/2012/01/ATHWD.txt)
 
 <!--more-->
 <pre>Title:  And The Hero Will Drown

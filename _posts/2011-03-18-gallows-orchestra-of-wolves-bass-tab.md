@@ -2,11 +2,11 @@
 layout: post
 title: Gallows - Orchestra of Wolves Bass Tab
 date: 2011-03-18 16:45
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file - <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/OOW.txt">Gallows - Orchestra Of Wolves</a>
+Download the text file - [Gallows - Orchestra Of Wolves](http://tookitaway.co.uk/wp-content/uploads/2012/01/OOW.txt)
 
 <!--more-->
 <pre>Title: Orchestra Of Wolves

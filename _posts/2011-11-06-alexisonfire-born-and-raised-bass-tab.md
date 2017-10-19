@@ -2,11 +2,11 @@
 layout: post
 title: Alexisonfire - Born And Raised Bass Tab
 date: 2011-11-06 16:32
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/BAR.txt">Alexisonfire - Born And Raised</a>
+Download the text file -  [Alexisonfire - Born And Raised](http://tookitaway.co.uk/wp-content/uploads/2012/01/BAR.txt)
 
 <!--more-->
 <pre>Title:  Born And Raised

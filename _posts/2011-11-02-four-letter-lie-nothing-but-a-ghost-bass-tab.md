@@ -2,11 +2,11 @@
 layout: post
 title: Four Letter Lie - Nothing But A Ghost Bass Tab
 date: 2011-11-02 23:04
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/NBAG.txt">Four Letter Lie - Nothing But A Ghost</a>
+Download the text file -  [Four Letter Lie - Nothing But A Ghost](http://tookitaway.co.uk/wp-content/uploads/2012/01/NBAG.txt)
 
 <!--more-->
 <pre>Title:  Nothing But A Ghost

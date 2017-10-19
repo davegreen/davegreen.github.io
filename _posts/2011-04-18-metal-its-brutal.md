@@ -2,7 +2,7 @@
 layout: post
 title: Metal... It's Brutal!
 date: 2011-04-18 21:42
-author: dave
+author: Dave Green
 comments: true
 categories: [Music]
 ---

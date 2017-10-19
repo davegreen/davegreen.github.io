@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 date: 2011-03-18 14:37
-author: dave
+author: Dave Green
 comments: true
 categories: []
 ---

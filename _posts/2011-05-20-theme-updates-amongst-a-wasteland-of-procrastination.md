@@ -2,7 +2,7 @@
 layout: post
 title: Theme updates amongst a wasteland of procrastination
 date: 2011-05-20 16:02
-author: dave
+author: Dave Green
 comments: true
 categories: [Site]
 ---

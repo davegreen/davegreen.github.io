@@ -2,7 +2,7 @@
 layout: post
 title: SCCM 2012 R2 - Updating and configuring HP ProBook 6470b/6570b BIOS in a task sequence - Part 1
 date: 2014-07-29 21:21
-author: dave
+author: Dave Green
 comments: true
 categories: [Computers]
 ---
@@ -11,9 +11,9 @@ Continuing my recent foray into System Center Configuration Manager (SCCM) 2012 
 The first thing we'll need to do is take care of the prerequisites and the downloads, so we've got all the files required to complete the work.
 <h3>Files Needed</h3>
 <ul>
-	<li>The HO ProBook 6x70b BIOS is available <a href="http://h20566.www2.hp.com/portal/site/hpsc/template.PAGE/public/psi/swdHome/?javax.portlet.prp_bd9b6997fbc7fc515f4cf4626f5c8d01=wsrp-navigationalState%3DswEnvOID%253D4054%257CswLang%253D%257Caction%253DlistDriver#BIOS">here</a> and should work with both the 6470b and the 6570b.</li>
-	<li><a href="http://ftp.hp.com/pub/caps-softpaq/cmit/HP_BCU.html">HP BIOS Configuration Utility</a> (HP BCU). I'm using version 3.0.13.1, there could be changes if you are using something newer.</li>
-	<li><a href="http://ftp.hp.com/pub/caps-softpaq/cmit/HP_SSM.html">HP System Software Manager</a> (HP SSM). Again, I'm using version 3.1.10.1, so be aware.</li>
+	<li>The HO ProBook 6x70b BIOS is available [here](http://h20566.www2.hp.com/portal/site/hpsc/template.PAGE/public/psi/swdHome/?javax.portlet.prp_bd9b6997fbc7fc515f4cf4626f5c8d01=wsrp-navigationalState%3DswEnvOID%253D4054%257CswLang%253D%257Caction%253DlistDriver#BIOS) and should work with both the 6470b and the 6570b.</li>
+	<li>[HP BIOS Configuration Utility](http://ftp.hp.com/pub/caps-softpaq/cmit/HP_BCU.html) (HP BCU). I'm using version 3.0.13.1, there could be changes if you are using something newer.</li>
+	<li>[HP System Software Manager](http://ftp.hp.com/pub/caps-softpaq/cmit/HP_SSM.html) (HP SSM). Again, I'm using version 3.1.10.1, so be aware.</li>
 </ul>
 First of all, we'll get the BIOS configuration working and we'll do the BIOS update second. This may sound backwards, but it simplifies things if you will be imaging a mix of factory fresh and pre-provisioned machines. This is because we'll be setting the BIOS password in the configuration stage and putting the logic there to deal with whether the machine already has a password set. This means when we come to the BIOS flash, we can just run the tool in a straightforward way.
 <h6>NOTE: If you're not using a BIOS password, you can do this in any order, but I highly recommend you secure things properly. The last thing your service desk needs is someone changing the boot order and installing their own OS or something, because users.</h6>
@@ -24,7 +24,7 @@ Extract the HP System Software Manager download and install it. You'll then have
 	<li>"HpqPswd.exe" (BIOS password encryption tool)</li>
 </ul>
 <h6>NOTE: For the ProBook 6x70b, we'll be using the hpqFlash.exe utility that we'll get later, as that's the one that works with these models. If you are using newer models (like the EliteBook 840G1), you will need to use HPBIOSUPDREC.exe.</h6>
-<a href="http://tookitaway.co.uk/wp-content/uploads/2014/07/HPQPswd.png"><img class="alignnone wp-image-1288 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/07/HPQPswd.png" alt="HPQPswd" width="339" height="344" /></a>
+[<img class="alignnone wp-image-1288 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/07/HPQPswd.png" alt="HPQPswd" width="339" height="344" />](http://tookitaway.co.uk/wp-content/uploads/2014/07/HPQPswd.png)
 
 If you run HpqPswd.exe, it will ask you for the BIOS password you wish to encrypt into a ".bin" file. Enter your BIOS password, then save the file somewhere useful, as this we will use this later to as the credential for configuring/updating the BIOS.
 <h3>Preparing the BIOS configuration</h3>
@@ -36,7 +36,7 @@ To start this process, you'll need to install the HP BIOS configuration utility,
 	<li>"BiosConfigUtility64.exe" (BIOS configuration tool, for x64)</li>
 </ul>
 <h6>NOTE: Both of these files seem to work fine on x64 build of Windows 7, so I'm not too sure why there is a specific x64 version. The "BIOS Configuration Utility User Guide.pdf" is alo quite useful, so you may want to grab that too.</h6>
-<a href="http://tookitaway.co.uk/wp-content/uploads/2014/07/BIOSConfigurationUtilityHelp.png"><img class="alignnone wp-image-1293 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/07/BIOSConfigurationUtilityHelp.png" alt="BIOSConfigurationUtilityHelp" width="668" height="571" /></a>
+[<img class="alignnone wp-image-1293 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/07/BIOSConfigurationUtilityHelp.png" alt="BIOSConfigurationUtilityHelp" width="668" height="571" />](http://tookitaway.co.uk/wp-content/uploads/2014/07/BIOSConfigurationUtilityHelp.png)
 
 If you take BiosConfigUtility and run it on the machine you've configured, you can get it to export the current configuration to file, using "BiosConfigUtility.exe /get:"ProBook 6x70b\BIOSConfig.cfg""
 
@@ -67,4 +67,4 @@ TPM Activation Policy
     *No prompts</pre>
 You can tweak the file however you need, It seems the general recommendation is to remove anything you're not actively going to set, as this provides a more concise config file and makes it easier to track down issues.
 
-In the next part, I'll cover setting up the SCCM side of things now we are nearly ready to deploy the new settings and upgrade the BIOS. <a href="http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-2/">Read on to Part 2</a>!
+In the next part, I'll cover setting up the SCCM side of things now we are nearly ready to deploy the new settings and upgrade the BIOS. [Read on to Part 2](http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-2/)!
