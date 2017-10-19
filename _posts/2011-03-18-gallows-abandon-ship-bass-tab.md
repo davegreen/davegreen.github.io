@@ -6,9 +6,9 @@ author: dave
 comments: true
 categories: [Music]
 ---
-Download the text file -  <a href="http://tookitaway.co.uk/wp-content/uploads/2012/01/AS.txt">Gallows - Abandon Ship</a>
 
-<!--more-->
+Download the text file - [Gallows - Abandon Ship](http://tookitaway.co.uk/assets/music/tabs/AS.txt)
+
 <pre>Title: Abandon Ship
 Artist: Gallows
 Tuning: DADG</pre>
