@@ -62,7 +62,7 @@ We also tried trusty [ProcMon](https://technet.microsoft.com/en-us/sysinternals
     Faulting package full name:
     Faulting package-relative application ID:
 
-## A Clue!
+## A Clue
 
 We then looked in the next place we usually look when this kind of thing goes on, even though there were no changes to the machine, other than adding the machine to the session collection.
 
