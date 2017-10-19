@@ -12,4 +12,4 @@ It's very basic, all it does is change the 'Howdy' text in the toolbar (front an
 
 It was good fun to write, so here it is!
 
-[WP-AlterHowdy](http://tookitaway.co.uk/wp-content/uploads/2012/03/wp-alterhowdy.zip)
+[WP-AlterHowdy](../assets/computers/wp-alterhowdy.zip)

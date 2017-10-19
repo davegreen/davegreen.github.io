@@ -14,7 +14,7 @@ Anyway, below is the correctly configured ldif file that will add the required a
 
 ##### The following file is supplied with absolutely no guarantees and may in fact cause your Active Directory environment to spontaneously combust, or develop an unhealthy craving for human brains
 
-[ADSchemaExtension_OSX10.6.ldif](http://tookitaway.co.uk/wp-content/uploads/2011/07/ADSchemaExtension_OSX10.6.ldif_.txt)
+[ADSchemaExtension_OSX10.6.ldif](../assets/computers/ADSchemaExtension_OSX10.6.ldif_.txt)
 
 You should add this schema modification to the AD schema, by using the following command:
     ldifde -i -u -f ADSchemaExtension_OSX10.6.ldif -s server:port -b username domain password -j . -c "cn=Configuration,dc=X" #configurationNamingContext

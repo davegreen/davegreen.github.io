@@ -24,11 +24,11 @@ Current version:
 
 Older versions:
 
-- [shadowGroupSync-6](http://tookitaway.co.uk/wp-content/uploads/2012/10/shadowGroupSync-6.zip) (22/01/2013)
-- [shadowGroupSync-5](http://tookitaway.co.uk/wp-content/uploads/2012/10/shadowGroupSync-5.zip) (20/01/2013)
-- [shadowGroupSync-4](http://tookitaway.co.uk/wp-content/uploads/2012/10/shadowGroupSync-4.zip) (28/10/2012)
-- [shadowGroupSync-3](http://tookitaway.co.uk/wp-content/uploads/2012/10/shadowGroupSync-3.zip) (24/10/2012)
-- [i3laze-shadowGroupSync](http://tookitaway.co.uk/wp-content/uploads/2012/09/i3laze-shadowGroupSync.zip)
-- [shadowGroupSync](http://tookitaway.co.uk/wp-content/uploads/2012/09/shadowGroupSync.zip)
+- [shadowGroupSync-6](../assets/computers/shadowGroupSync-6.zip) (22/01/2013)
+- [shadowGroupSync-5](../assets/computers/shadowGroupSync-5.zip) (20/01/2013)
+- [shadowGroupSync-4](../assets/computers/shadowGroupSync-4.zip) (28/10/2012)
+- [shadowGroupSync-3](../assets/computers/shadowGroupSync-3.zip) (24/10/2012)
+- [i3laze-shadowGroupSync](../assets/computers/i3laze-shadowGroupSync.zip)
+- [shadowGroupSync](../assets/computers/shadowGroupSync.zip)
 
 Thanks to i3laze for his work with this. I probably wouldn't have made the effort to extend the script without it.
