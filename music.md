@@ -28,7 +28,7 @@ A metal band - to be updated soon :)
 
 [Illusion Never Lies](http://tookitaway.co.uk/wp-content/uploads/2011/12/IllusionNeverLies.mp3)
 
-### Tom Bertram (Pop, Rock)
+### [Tom Bertram (Pop, Rock)](https://www.tombertram.co.uk/)
 
 - When: 2010-2011
 - Instruments: Bass Guitar, Backing Vocals
