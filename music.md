@@ -19,6 +19,8 @@ A metal band - to be updated soon :)
 - Instruments: Bass Guitar, Backing Vocals
 - No releases.
 
+- - -
+
 ### [Warbound](http://fearthemonkey.co.uk/bands/warbound/) (Guest Musician) (Thrash Metal)
 
 - When: 2011
@@ -27,6 +29,8 @@ A metal band - to be updated soon :)
 #### Releases
 
 [Illusion Never Lies](http://tookitaway.co.uk/wp-content/uploads/2011/12/IllusionNeverLies.mp3)
+
+- - -
 
 ### [Tom Bertram (Pop, Rock)](https://www.tombertram.co.uk/)
 
@@ -40,6 +44,8 @@ A metal band - to be updated soon :)
 [She's Like A Drug - (2011) Single (iTunes)](http://itunes.apple.com/gb/album/shes-like-a-drug-single/id466464328)
 
 [Wasting Time - (2012) (Tracks 2, 5 and 7) (iTunes)](https://itunes.apple.com/gb/album/brighter-days/id497347675)
+
+- - -
 
 ### [Famous Grey](http://www.last.fm/music/Famous+Grey) (Punk-Rock, Hardcore)
 
