@@ -65,7 +65,7 @@ For testing, I'll be setting the schedule of the script to 5 minutes (not shown)
 
 Here's the script itself:
 
-https://gist.github.com/davegreen/c4e4b2e7039475e058b4
+[Two State Monitor](https://gist.github.com/davegreen/c4e4b2e7039475e058b4)
 
 Take note that the SQL query in the script is made up for this example, but the rest script can be used for many other things. I've used parameters for the database server and database name in the script, so the solution just relies on the script and return values being specified correctly in the lower half of the script.
 
