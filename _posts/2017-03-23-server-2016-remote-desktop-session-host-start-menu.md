@@ -8,11 +8,11 @@ categories: [Computers]
 ---
 Last week we ran into a small issue with one of our first Server 2016 deployments when using it as a Remote Desktop Session Host (RDSH) that took us a little while to figure out.
 
-<h2>The Problem</h2>
+## The Problem
 
 When we added the machine to the RDSH collection, the machine would then fail to load any Appx apps (including the start menu (ShellExperienceHost!). We initially had a bit of trouble targeting the cause, as other than adding the machine to the session collection, nothing had changed.
 
-<h2>Some Troubleshooting</h2>
+## Some Troubleshooting
 
 We did find some events saying the application couldn't be installed in the application log (for the first login only), but also every time in the TWinUI log. This gave me a good idea of where the problem lay, but we followed through looking at the logs to see if it would give us some more information.
 
@@ -62,7 +62,7 @@ Report Id: 4c97f524-b5e8-44c0-b03a-2b939c6924d2
 Faulting package full name:
 Faulting package-relative application ID:</pre>
 
-<h2>A Clue!</h2>
+## A Clue!
 
 We then looked in the next place we usually look when this kind of thing goes on, even though there were no changes to the machine, other than adding the machine to the session collection.
 
@@ -94,7 +94,7 @@ No packaged apps can be executed while Exe rules are being enforced and no Packa
 
 Turns out the issue was Applocker blocking the install and the run of the app, which is odd since it wasn't affecting us before. This problem doesn't seem to affect administrative users that log on before the machine is added to the session collection (which I believe is the expected behaviour). The unexpected behaviour is that AppLocker policies appear to be enforced for all users when the server is in a session host collection, which in our case prevented the start menu from working.
 
-<h2>The Solution</h2>
+## The Solution
 
 A simple fix in the end.
 

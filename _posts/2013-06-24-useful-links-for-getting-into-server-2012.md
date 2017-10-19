@@ -27,7 +27,7 @@ It's also handy if, like me, you've started on the new MCSA/MCSE tracks and want
 	<li>[Everything you need to get started with Active Directory](http://blogs.technet.com/b/ashleymcglone/archive/2012/01/03/everything-you-need-to-get-started-with-active-directory.aspx)</li>
 </ul>
 I'll add links as I remember them, come across them again, or just find new ones. Check back occasionally for updates.
-<h3>Note:</h3>
+### Note:
 If you're getting ready to take the 70-410 Exam: Installing and Configuring Windows Server 2012, there's a [nice little practice test](http://www.tech-faq.com/70-410-installing-and-configuring-microsoft-windows-server.html) I found that might help you on your way.
 
 &nbsp;

@@ -15,13 +15,13 @@ As a recap, you'll remember that I decided to set up two packages for the config
         HPBIOSUPDREC.exe        (New BIOS update utility)
         hpqFlash.exe            (Old BIOS update utility)
         ProBook6x70bBIOS.cab    (HP Probook 6x70b BIOS file)</pre>
-<h2>Updating the BIOS</h2>
+## Updating the BIOS
 This time, most of the hard work is actually done in the Operating System Deployment (OSD) task. The task needs to be set up to call the BIOS flash tool (Either HPBIOSUPDREC.exe or hpqFlash.exe (depending on the BIOS you need to flash). For the 6x70b's, hpqFlash.exe is the one to use! The call to the BIOS flash tool follows the following syntaxes.
-<h3>hpqFlash</h3>
+### hpqFlash
 [<img class="alignnone wp-image-1336 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/hpqFlashhelp.png" alt="hpqFlashhelp" width="492" height="409" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/hpqFlashhelp.png)
 
 As you can guess, the most interesting command line switches to me are -s -p and -f. Please note, I have not tested and am not 100% sure of the other switches. I can imagine -a could be especially dangerous, so please take care!
-<h3>HPBIOSUPDREC</h3>
+### HPBIOSUPDREC
 [<img class="alignnone wp-image-1337 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/HPBIOSUPDREChelp.png" alt="HPBIOSUPDREChelp" width="483" height="274" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/HPBIOSUPDREChelp.png)
 
 You can see that the switches are exactly the same here, minus the microcode update switch. This is good, as it will make things easier if we automate the selection of flashing tool to use in the future.

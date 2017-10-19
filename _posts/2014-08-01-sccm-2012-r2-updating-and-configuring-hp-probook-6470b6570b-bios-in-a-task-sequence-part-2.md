@@ -26,7 +26,7 @@ SCCMSources\OSD\Packages
         hpqFlash.exe            (Old BIOS update utility)
         ProBook6x70bBIOS.cab    (HP Probook 6x70b BIOS file)</pre>
 <h6>NOTE: "SCCMSources" is my network share I store the SCCM source files to use as the content location for applications and packages. I then have "OSD\Packages" to differentiate these packages as being primarily for OSD task sequences. Hopefully the "BIOSUpdate" and "BIOSConfig" folders will eventually house many folders for different types of laptop, but at the moment it's a bit bare.</h6>
-<h2>Configuring the BIOS</h2>
+## Configuring the BIOS
 Most of the magic for configuring the BIOS is done in the file "ProBook6x70bConfig.cmd" (shown below).
 
 https://gist.github.com/davegreen/758de1c4d707002506e6
