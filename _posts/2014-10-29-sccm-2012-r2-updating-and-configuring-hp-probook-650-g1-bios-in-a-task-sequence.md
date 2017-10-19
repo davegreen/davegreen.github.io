@@ -30,8 +30,8 @@ This -r switch appears to be undocumented, which is a shame really, but this pre
 
 In the SCCM package, I've placed both the HPBIOSUPDREC tool and the BIOS binary file. The task sequence runs it as shown below:
 
-[<img class="alignnone size-full wp-image-1393" src="http://tookitaway.co.uk/wp-content/uploads/2014/10/650G1-1.png" alt="650G1-1" width="464" height="368" />](http://tookitaway.co.uk/wp-content/uploads/2014/10/650G1-1.png)
+![650G1-1](../assets/img/650G1-1.png)
 
-[<img class="alignnone size-full wp-image-1394" src="http://tookitaway.co.uk/wp-content/uploads/2014/10/650G1-2.png" alt="650G1-2" width="471" height="551" />](http://tookitaway.co.uk/wp-content/uploads/2014/10/650G1-2.png)
+![650G1-2](../assets/img/650G1-2.png)
 
 The WMI query makes sure it only runs on the selected/supported HP ProBook 640 G1 and 650 G1's we have in our environment. There's no danger in making this query less specific, as the update tool will only flash machines that the update is applicable to. I have also added the exit codes 273 and 282, which are exit codes for "BIOS is already same version" (273) and BIOS installed is newer than the one set to install (272).

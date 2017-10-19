@@ -31,7 +31,7 @@ Extract the HP System Software Manager download and install it. You'll then have
 
 NOTE: For the ProBook 6x70b, we'll be using the hpqFlash.exe utility that we'll get later, as that's the one that works with these models. If you are using newer models (like the EliteBook 840G1), you will need to use HPBIOSUPDREC.exe.
 
-[<img class="alignnone wp-image-1288 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/07/HPQPswd.png" alt="HPQPswd" width="339" height="344" />](http://tookitaway.co.uk/wp-content/uploads/2014/07/HPQPswd.png)
+![HPQPswd](../assets/img/HPQPswd.png)
 
 If you run HpqPswd.exe, it will ask you for the BIOS password you wish to encrypt into a ".bin" file. Enter your BIOS password, then save the file somewhere useful, as this we will use this later to as the credential for configuring/updating the BIOS.
 
@@ -45,7 +45,7 @@ To start this process, you'll need to install the HP BIOS configuration utility,
 
 NOTE: Both of these files seem to work fine on x64 build of Windows 7, so I'm not too sure why there is a specific x64 version. The "BIOS Configuration Utility User Guide.pdf" is also quite useful, so you may want to grab that too.
 
-[<img class="alignnone wp-image-1293 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/07/BIOSConfigurationUtilityHelp.png" alt="BIOSConfigurationUtilityHelp" width="668" height="571" />](http://tookitaway.co.uk/wp-content/uploads/2014/07/BIOSConfigurationUtilityHelp.png)
+[BIOSConfigurationUtilityHelp](../assets/img/BIOSConfigurationUtilityHelp.png)
 
 If you take BiosConfigUtility and run it on the machine you've configured, you can get it to export the current configuration to file, using "BiosConfigUtility.exe /get:"ProBook 6x70b\BIOSConfig.cfg""
 

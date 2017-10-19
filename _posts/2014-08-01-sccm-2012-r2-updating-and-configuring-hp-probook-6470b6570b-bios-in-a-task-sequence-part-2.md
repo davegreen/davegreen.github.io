@@ -39,11 +39,11 @@ This batch file picks the correct version of BiosConfigUtility to run (x86 or x6
 
 However if it fails for some reason (i.e. there's a BIOS password set) It then runs the second command, which attempts to set the configuration, using the current password. I've yet to properly test a parameterized version of this, to allow the configuration to be specified outside of the batch file.
 
-[<img class="alignnone wp-image-1322 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigprops.png" alt="biosconfigprops" width="544" height="450" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigprops.png)
+![biosconfigprops](../assets/img/biosconfigprops.png)
 
 This is run in the SCCM task sequence, at the beginning, before provisioning or enabling Bitlocker, but after formatting the drive, so that on the reboot that occurs directly afterward, using an "Restart Computer" task, the boot image can be successfully staged to the hard disk.
 
-[<img class="alignnone wp-image-1324 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigopts.png" alt="biosconfigopts" width="546" height="508" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/biosconfigopts.png)
+![biosconfigopts](../assets/img/biosconfigopts.png)
 
 The options base the running of this task on the computer model name, so that we dont try to configure an incompatible BIOS or some other crazy situation. It's not too clear in the image, but I'm using the single character wildcard "_" in the model - "SELECT * FROM Win32_ComputerSystem WHERE Model LIKE "HP ProBook 6_70b""
 

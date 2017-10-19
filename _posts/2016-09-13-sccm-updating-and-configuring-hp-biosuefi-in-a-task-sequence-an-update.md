@@ -52,13 +52,13 @@ We can use the same SCCM 'Run command line' task we used in the past for this, 
 
 This is the configure command line:
 
-[<img class="alignnone size-full wp-image-1716" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Configure.png" alt="command-line-configure" width="466" height="246" />](http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Configure.png)
+![command-line-configure](../assets/img/Command-Line-Configure.png)
 
 Followed by the update command line, along with the success exit codes shown.
 
-[<img class="alignnone size-large wp-image-1717" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Update.png" alt="command-line-update" width="466" height="244" />](http://tookitaway.co.uk/wp-content/uploads/2016/09/Command-Line-Update.png)
+![command-line-update](../assets/img/Command-Line-Update.png)
 
-[<img class="alignnone size-large wp-image-1718" src="http://tookitaway.co.uk/wp-content/uploads/2016/09/Update-Exit-Codes.png" alt="update-exit-codes" width="468" height="135" />](http://tookitaway.co.uk/wp-content/uploads/2016/09/Update-Exit-Codes.png)
+![update-exit-codes](../assets/img/Update-Exit-Codes.png)
 
 The update command line needs to follow the configure step if as it requires a password bin file.
 

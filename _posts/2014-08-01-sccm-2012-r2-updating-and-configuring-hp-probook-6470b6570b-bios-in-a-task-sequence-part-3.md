@@ -23,21 +23,21 @@ This time, most of the hard work is actually done in the Operating System Deploy
 
 ### hpqFlash
 
-[<img class="alignnone wp-image-1336 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/hpqFlashhelp.png" alt="hpqFlashhelp" width="492" height="409" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/hpqFlashhelp.png)
+![hpqFlashhelp](../assets/img/hpqFlashhelp.png)
 
 As you can guess, the most interesting command line switches to me are -s -p and -f. Please note, I have not tested and am not 100% sure of the other switches. I can imagine -a could be especially dangerous, so please take care!
 
 ### HPBIOSUPDREC
 
-[<img class="alignnone wp-image-1337 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/HPBIOSUPDREChelp.png" alt="HPBIOSUPDREChelp" width="483" height="274" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/HPBIOSUPDREChelp.png)
+![HPBIOSUPDREC help](../assets/img/HPBIOSUPDREChelp.png)
 
 You can see that the switches are exactly the same here, minus the microcode update switch. This is good, as it will make things easier if we automate the selection of flashing tool to use in the future.
 
-[<img class="alignnone wp-image-1338 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosupdateprops.png" alt="biosupdateprops" width="462" height="461" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/biosupdateprops.png)
+![biosupdateprops](../assets/img/biosupdateprops.png)
 
 This is run in the SCCM task sequence, just after the reboot for configuring the BIOS, but again before provisioning or enabling Bitlocker. Again, there should be a "Restart Computer" task directly after this to finalise the update procedure. As you can see, hpqFlash is called directly with the BIOS password and the cab file to install, as well as the silent switch.
 
-[<img class="alignnone wp-image-1339 size-full" src="http://tookitaway.co.uk/wp-content/uploads/2014/08/biosupdateopts.png" alt="biosupdateopts" width="463" height="517" />](http://tookitaway.co.uk/wp-content/uploads/2014/08/biosupdateopts.png)
+![biosupdateopts](../assets/img/biosupdateopts.png)
 
 As per the BIOS configuration task, it is based on the computer model name, so that we dont try to flash an incompatible BIOS. If inconsistencies were found that required a different BIOS for the same model, a seperate task could be created with an additional WMI query to obtain another identifying value. You may also see that an additional success code is added (273) this is the code returned by hpqFlash if the BIOS is already up to date and no action is taken. This allows the task sequence to continue as normal if the BIOS is already up to date.
 

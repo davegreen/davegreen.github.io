@@ -18,4 +18,4 @@ In the GPO I had to specify the exclusion settings and also the default threat a
 
 Previously these settings were defined as REG_DWORD, but need to be REG_SZ, as shown below:
 
-[<img class="alignnone size-full wp-image-1401" src="http://tookitaway.co.uk/wp-content/uploads/2014/10/ThreatSeverityDefaultAction.png" alt="ThreatSeverityDefaultAction" width="748" height="252" />](http://tookitaway.co.uk/wp-content/uploads/2014/10/ThreatSeverityDefaultAction.png)
+![ThreatSeverityDefaultAction](../assets/img/ThreatSeverityDefaultAction.png)

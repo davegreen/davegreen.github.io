@@ -8,6 +8,6 @@ categories: [Computers]
 ---
 If you have problems with your Mac not playing nicely with network resources after sleep, you may find adding the following managed preference useful. It makes the mac prompt for a password after coming out of screensaver/sleep.
 
-[<img alt="Workgroup Manager com.apple.screensaver preferences" src="http://tookitaway.co.uk/wp-content/uploads/2013/02/Manage10.6PrefsScreenshot06-150x150.png" width="150" height="150" />](http://tookitaway.co.uk/wp-content/uploads/2013/02/Manage10.6PrefsScreenshot06.png)
+![Workgroup Manager com.apple.screensaver preferences](../assets/img/Manage10.6PrefsScreenshot06)
 
 Unfortunately, there's no GUI checkbox or anything for this setting in Workgroup Manager, so I've taken a screenshot and highlighted the required setting.
