@@ -16,9 +16,7 @@ Even lacking these things, it's still PowerShell, so I soldiered on. It took a l
 
 The two scripts can be [downloaded from GitHub](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX).
 
-<ul>
-    <li>[Import-AXUser.ps1](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Import-AXUser.ps1)</li>
-    <li>[Export-AXUser.ps1](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Export-AXUser.ps1)</li>
-</ul>
+- [Import-AXUser.ps1](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Import-AXUser.ps1)
+- [Export-AXUser.ps1](https://github.com/davegreen/miscellaneous/tree/master/PowerShell/DynamicsAX/Export-AXUser.ps1)
 
 There are also some features I'll implement if I get the time, such as complete overwrite on import and support for importing/exporting user data from remote servers.

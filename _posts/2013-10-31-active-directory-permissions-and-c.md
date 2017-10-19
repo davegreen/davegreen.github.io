@@ -10,4 +10,4 @@ I've been doing some work recently with C# querying AD for locked out users. One
 
 Fortunately there is a computed AD attribute available for this to do the job, called allowedAttributesEffective. [Here](https://gist.github.com/davegreen/7253114) is some sample code to check a user for attributes you can write to:
 
-https://gist.github.com/davegreen/7253114
+[allowAttributesEffective](https://gist.github.com/davegreen/7253114)

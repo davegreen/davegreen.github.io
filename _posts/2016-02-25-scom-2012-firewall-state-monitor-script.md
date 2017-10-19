@@ -12,6 +12,6 @@ This script requires the excellentÂ [Wizard to Create Powershell-based MonitorsÂ
 
 It generates a property bag of whether you have each of the three Windows Firewall profiles enabled/disabled and (depending on how you've configured the monitor), alerts on them.
 
-https://gist.github.com/davegreen/5eabc188f78b2576c70e
+[FirewallState](https://gist.github.com/davegreen/5eabc188f78b2576c70e)
 
 It's a very useful little script to ferret out those little servers with the firewall turned off!

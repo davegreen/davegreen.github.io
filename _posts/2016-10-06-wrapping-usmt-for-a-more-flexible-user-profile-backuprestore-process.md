@@ -10,12 +10,10 @@ I've done a bit with the [User State Migration Tool (USMT)](https://technet.mi
 
 One of the scenarios I needed to support was user initiated backup and restore of the current user profile. To support this and meet the requirements, I needed the following things:
 
-<ul>
-    <li>Multiple profile backups must be permitted. If a user performs a profile backup and doesn't restore the data, the user must be able to backup their profile again without requiring outside intervention.</li>
-    <li>Previous profile backups should be stored for a time, as users may forget to restore or files may need to be recovered from the USMT store.</li>
-    <li>When a restore is done, the latest profile backup for that user should be restored. This allows previous backups to exist for IT to recover files from if required.</li>
-    <li>Users don't necessarily have administrative rights, so the solution must run as the local system to backup the current user.</li>
-</ul>
+- Multiple profile backups must be permitted. If a user performs a profile backup and doesn't restore the data, the user must be able to backup their profile again without requiring outside intervention.
+- Previous profile backups should be stored for a time, as users may forget to restore or files may need to be recovered from the USMT store.
+- When a restore is done, the latest profile backup for that user should be restored. This allows previous backups to exist for IT to recover files from if required.
+- Users don't necessarily have administrative rights, so the solution must run as the local system to backup the current user.
 
 The current script is designed to run either as an SCCM application, or from a task sequence to get the most recent logged on user and backup that profile only, along with the SYSTEM profile (to catch files stored in the root C:, as an example). Restore is to work the same way and unpack the most recent profile backup onto the destination machine it is run on.
 
@@ -23,6 +21,4 @@ Backing up the current user profile when running as SYSTEM presented a bit of a 
 
 Here's two scripts I call from task sequences to give user initiated scan and load tasks. This gives the users the ability to self-service their own backups and restores with no intervention from IT.
 
-https://gist.github.com/davegreen/54d688e91a002c4d0b8dac3a02fabc0d
-
-&nbsp;
+[Scripts](https://gist.github.com/davegreen/54d688e91a002c4d0b8dac3a02fabc0d)

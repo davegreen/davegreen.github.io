@@ -14,21 +14,21 @@ I considered using PowerShell for this, however it takes a little while to start
 
 I've set up the package for HP machines I need to configure and update as follows:
 
-<pre>SCCMPackages\HP-UEFI\
-    68ICF.CAB (UEFI firmware - EliteBook 8x70p)
-    BiosConfigUtility.exe   (BIOS config utility - x86)
-    BiosConfigUtility64.exe (BIOS config utility - x64)
-    BIOSPW.bin              (Encrypted BIOS password)
-    ConfigureUEFI.cmd (UEFI config command file)
-    EliteDesk800G2-Win7.cfg (UEFI configuration - Win 7)
-    EliteDesk800G2-Win10.cfg (UEFI configuration - Win 10)
-    EliteBook8x0G3-Win7.cfg (UEFI configuration - Win 7)
-    EliteBook8x0G3-Win10.cfg (UEFI configuration - Win 10)
-    EliteBook8x70p-Win7 (UEFI configuration - Win7)
-    N75_0110.bin (UEFI firmware - EliteBook 8x0 G3)
-    N21_0219.bin (UEFI firmware - EliteDesk 800 G2 SFF)
-    UpdateBIOS.cmd (UEFI update command file HPqflash models)
-    UpdateUEFI.cmd (UEFI update command file HPBIOSUPDREC models)</pre>
+    SCCMPackages\HP-UEFI\
+        68ICF.CAB (UEFI firmware - EliteBook 8x70p)
+        BiosConfigUtility.exe   (BIOS config utility - x86)
+        BiosConfigUtility64.exe (BIOS config utility - x64)
+        BIOSPW.bin              (Encrypted BIOS password)
+        ConfigureUEFI.cmd (UEFI config command file)
+        EliteDesk800G2-Win7.cfg (UEFI configuration - Win 7)
+        EliteDesk800G2-Win10.cfg (UEFI configuration - Win 10)
+        EliteBook8x0G3-Win7.cfg (UEFI configuration - Win 7)
+        EliteBook8x0G3-Win10.cfg (UEFI configuration - Win 10)
+        EliteBook8x70p-Win7 (UEFI configuration - Win7)
+        N75_0110.bin (UEFI firmware - EliteBook 8x0 G3)
+        N21_0219.bin (UEFI firmware - EliteDesk 800 G2 SFF)
+        UpdateBIOS.cmd (UEFI update command file HPqflash models)
+        UpdateUEFI.cmd (UEFI update command file HPBIOSUPDREC models)</pre>
 
 A sample set of files for all of this can be [found on GitHub](https://github.com/davegreen/miscellaneous/tree/master/SCCMPackages/HP-UEFI), except the HP binaries and firmware, which need to be downloaded from HP.
 
@@ -40,13 +40,13 @@ I did a bit of investigation with procmon on a full windows system and found ole
 
 Both ConfigureUEFI.cmd and UpdateUEFI.cmd are general for all models using HPBIOSUPDREC and the HP BIOS config utility and look like this:
 
-https://gist.github.com/davegreen/ac642a9a5f4eab2b85a9e10bfbabe889
+[ConfigureUEFI](https://gist.github.com/davegreen/ac642a9a5f4eab2b85a9e10bfbabe889)
 
-https://gist.github.com/davegreen/2caade16ace6f541b0789a084f6c7a86
+[UpdateUEFI](https://gist.github.com/davegreen/2caade16ace6f541b0789a084f6c7a86)
 
 There's also a slightly different version for deploying updated firmware, if you're still using HPqflash:
 
-https://gist.github.com/davegreen/be569e1c4d10dd09772467e265c935f3
+[HPqFlash](https://gist.github.com/davegreen/be569e1c4d10dd09772467e265c935f3)
 
 We can use the same SCCM 'Run command line' task we used in the past for this, with a little tweak to run the command file with the right update or configuration. This is done in the same way as before, with the extra exit code for successful completion.
 

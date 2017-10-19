@@ -13,7 +13,9 @@ It's really unfortunate that this still isn't fixed in SCCM 2012 R2, having also
 To resolve the problem, I used my existing [SCEP Group Policy ADMX template](https://github.com/davegreen/miscellaneous/tree/master/CustomADMX) in creating a GPO to replicate the default settings pushed out to clients with SCCM, which solves the problem, as the exceptions and settings we push out to standard clients aren't any different from the Microsoft recommended settings.
 
 In the GPO I had to specify the exclusion settings and also the default threat actions, which are specified in the registry here:
-<pre>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Threats\ThreatSeverityDefaultAction</pre>
+
+    HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Threats\ThreatSeverityDefaultAction
+
 Previously these settings were defined as REG_DWORD, but need to be REG_SZ, as shown below:
 
 [<img class="alignnone size-full wp-image-1401" src="http://tookitaway.co.uk/wp-content/uploads/2014/10/ThreatSeverityDefaultAction.png" alt="ThreatSeverityDefaultAction" width="748" height="252" />](http://tookitaway.co.uk/wp-content/uploads/2014/10/ThreatSeverityDefaultAction.png)

@@ -18,6 +18,6 @@ These particular argument completers take a dependency on a little function to t
 
 Anyways, because they've saved me a lot of time, here they are. Hopefully they will save you some time too!:
 
-https://gist.github.com/davegreen/10006271bd0856cb0c68fb98b3956cbe
+[Completer 1](https://gist.github.com/davegreen/10006271bd0856cb0c68fb98b3956cbe)
 
-https://gist.github.com/davegreen/02487224a8371918520db05235033de7
+[Completer 2](https://gist.github.com/davegreen/02487224a8371918520db05235033de7)
