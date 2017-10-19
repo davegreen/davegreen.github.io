@@ -35,7 +35,7 @@ A metal band - to be updated soon :)
 
 #### Releases
 
-[Tom Bertram Band - (2011) Demo](href="http://tookitaway.co.uk/wp-content/uploads/2012/10/Tom-Bertram-Band-2011-Demo.zip)
+[Tom Bertram Band - (2011) Demo](http://tookitaway.co.uk/wp-content/uploads/2012/10/Tom-Bertram-Band-2011-Demo.zip)
 
 [She's Like A Drug - (2011) Single (iTunes)](http://itunes.apple.com/gb/album/shes-like-a-drug-single/id466464328)
 
