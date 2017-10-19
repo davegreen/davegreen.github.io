@@ -60,4 +60,4 @@ As you can see, this makes the script a little easier to read, which always bode
 
 [Here](https://gist.github.com/davegreen/453cee5ef2db1063a007) is the current script I'm using in full. Please let me know if you have any improvements you can suggest, as it's always a good day to learn!
 
-https://gist.github.com/davegreen/453cee5ef2db1063a007
+[OSDComputerName](https://gist.github.com/davegreen/453cee5ef2db1063a007)

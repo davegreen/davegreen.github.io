@@ -11,7 +11,8 @@ If you've come to this post directly, you may want to [read through part 1](http
 In this part, we'll cover putting the files we've got together in a couple of packages and putting them into a task sequence. We'll also be using WMI to query the computer model, so we don't try updating the BIOS on a machine it certainly won't work on.
 
 I've set up the files I need in the following hierarchy, and spread the BIOS configuration and update over two packages. You may decide to do it differently.
-<pre>SCCMSources\OSD\Packages
+
+    SCCMSources\OSD\Packages
     BIOSConfig\HP ProBook
         BiosConfigUtility.exe   (BIOS configuration utility - x86)
         BiosConfigUtility64.exe (BIOS configuration utility - x64)
@@ -19,17 +20,20 @@ I've set up the files I need in the following hierarchy, and spread the BIOS con
         ProBook6x70bConfig.cfg  (BIOS configuration settings)
         ProBook6x70bConfig.cmd  (BIOS configuration command file)
 
-SCCMSources\OSD\Packages
+    SCCMSources\OSD\Packages
     BIOSUpdate\HP Probook
         BIOSPW.bin              (Encrypted BIOS password)
         HPBIOSUPDREC.exe        (New BIOS update utility)
         hpqFlash.exe            (Old BIOS update utility)
         ProBook6x70bBIOS.cab    (HP Probook 6x70b BIOS file)</pre>
-<h6>NOTE: "SCCMSources" is my network share I store the SCCM source files to use as the content location for applications and packages. I then have "OSD\Packages" to differentiate these packages as being primarily for OSD task sequences. Hopefully the "BIOSUpdate" and "BIOSConfig" folders will eventually house many folders for different types of laptop, but at the moment it's a bit bare.</h6>
-## Configuring the BIOS
-Most of the magic for configuring the BIOS is done in the file "ProBook6x70bConfig.cmd" (shown below).
 
-https://gist.github.com/davegreen/758de1c4d707002506e6
+##### NOTE
+
+"SCCMSources" is my network share I store the SCCM source files to use as the content location for applications and packages. I then have "OSD\Packages" to differentiate these packages as being primarily for OSD task sequences. Hopefully the "BIOSUpdate" and "BIOSConfig" folders will eventually house many folders for different types of laptop, but at the moment it's a bit bare.
+
+## Configuring the BIOS
+
+Most of the magic for configuring the BIOS is done in the file [ProBook6x70bConfig.cmd](https://gist.github.com/davegreen/758de1c4d707002506e6)
 
 This batch file picks the correct version of BiosConfigUtility to run (x86 or x64), then runs it with the configuration file. It runs it first, attempting to get access to the BIOS using a blank password, then set the password along with the configuration. If this completes successfully (exit code 0), that's it!
 
