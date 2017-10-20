@@ -45,6 +45,8 @@ A PowerShell module for backing up DHCP logs for audit or retention purposes.
 
 A personal project to create a flexible Microsoft Windows frontend to the [udpcast](http://udpcast.linux.lu) project for multicasting files or folders to client machines.
 
+- - -
+
 ## Books
 
 ### As a Technical Reviewer
@@ -55,9 +57,13 @@ Technical review and feedback, making sure the technical content of the book was
 
 A well thought out book covering a large amount of the Active Directory landscape.
 
+- - -
+
 #### [Active Directory with PowerShell](https://www.packtpub.com/networking-and-servers/active-directory-powershell) by Uma Yellapragada (Packt Publishing)
 
 A nice book and would certainly help anyone just getting started with scripting with either Active Directory or PowerShell.
+
+- - -
 
 #### [Getting Started with Powershell](https://www.packtpub.com/networking-and-servers/getting-started-powershell) by Michael Shepard (Packt Publishing)
 
