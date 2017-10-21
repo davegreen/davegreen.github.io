@@ -29,7 +29,7 @@ markdown: kramdown
 theme: minima
 google_analytics: UA-24855655-1
 disqus:
-    shortname: tookitaway.disqus.com
+    shortname: tookitaway
 plugins:
   - jekyll-feed
 defaults:
