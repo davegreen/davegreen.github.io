@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Music
-date: 2011-07-22 19:17
 author: Dave Green
 comments: false
 categories: [Music]

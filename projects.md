@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Projects
-date: 2011-03-18 14:37
 author: Dave Green
 comments: false
 categories: [Projects]
