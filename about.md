@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+comments: false
+categories: Community
 ---
 
 If you've made it this far, welcome. My name is Dave Green and I'm an IT Pro with a big interest in music, PowerShell, books and a lot of other stuff!

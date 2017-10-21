@@ -27,6 +27,9 @@ permalink: /:year-:month-:day/:title
 # Build settings
 markdown: kramdown
 theme: minima
+google_analytics: UA-24855655-1
+disqus:
+    shortname: tookitaway.disqus.com
 plugins:
   - jekyll-feed
 defaults:
