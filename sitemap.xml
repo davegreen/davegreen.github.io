@@ -7,17 +7,21 @@ date: 2017-10-25
 
 <!-- blog posts -->
 {% for post in site.posts %}
+  {% if post.date != null %}
   <url>        
     <loc>{{ site.url }}{{ post.url }}</loc>
     <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
   </url>
+  {% endif %}
 {% endfor %}
 
 <!-- pages -->
 {% for page in site.pages %}
+  {% if page.date != null %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ page.date | date: '%Y-%m-%d' }}</lastmod>
   </url>
+  {% endif %}
 {% endfor %}
 </urlset>
