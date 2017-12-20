@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Computers]
 ---
-Lately I've bee working on a little more SCCM operating system deployment work and I've got an updated toolset for configuring and updating UEFI firmware for HP machines easily in a task sequence. This is a reasonably long post, so bear with me.
+Lately I've been working on a little more SCCM operating system deployment work and I've got an updated toolset for configuring and updating UEFI firmware for HP machines easily in a task sequence. This is a reasonably long post, so bear with me.
 
 A lot of the same techniques [from my earlier posts](http://tookitaway.co.uk/tag/hp-bios-configuration-utility/) on the subject apply. We are still using HPBIOSUPDREC, BiosConfigUtility and an SCCM package for the source files. I've updated the batch files to take an argument for the configuration or update file, as well as the previous architecture detection. The good thing about this method is that it supports all current HP laptop, desktop and workstation models with no change, you just give the update file, or the configuration as an argument and away you go.
 
