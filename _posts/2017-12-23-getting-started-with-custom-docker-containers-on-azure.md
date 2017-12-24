@@ -15,6 +15,8 @@ Before I got involved, the plan was for a two-tier architecture hosted using Azu
 
 Essentially, it sounded like a good time to sprinkle some cloud magic on it and see where the infrastructure ended up!
 
+All of the command lines I use in this example are right to the best of my ability, but please let me know if there are any issues!
+
 # Initial Idea
 
 I'd heard about Docker containers a bit, from a few people and I knew it would be a good fit for the web frontend for this (assuming I could get it working) and although this would be my first proper foray into using Docker for a production service, I was reasonably confident this would be the way forward. I could always fall back on the old plan, right?
@@ -57,7 +59,7 @@ Because the requirements of the web app only need the PhantomJS binary and nothi
 
 To get this working, this led me to edit the package install RUN line to add the backports repository and make sure that PhantomJS is installed.
 
-This changes the start of the package install RUN line:
+This changes the start of the package install RUN line as shown.
 
 ```diff
 -RUN apt update \
@@ -83,14 +85,14 @@ Now I can build the resulting container and test locally, by pushing things into
 
 I needed a place to store the resulting container artifact, I decided to use an [Azure Container Registry](https://azure.microsoft.com/en-gb/services/container-registry/) for this. I could have used the [Docker Hub](https://hub.docker.com/), but I thought it would be better to keep things in one place.
 
-To deploy the container registry, I used:
+To deploy the container registry, i ran:
 
 ```bash
 az acr create -n containerregistry -g weblinuxcontainer --sku Basic --admin-enabled true
 az acr credential show -n containerregistry
 ```
 
-I navigated to the Dockerfile folder for my custom container and ran the following:
+I navigated to the Dockerfile folder for my custom container and ran this:
 
 ```bash
 docker build -t container .
