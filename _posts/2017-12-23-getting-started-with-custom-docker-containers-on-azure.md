@@ -43,8 +43,9 @@ RUN a2enmod rewrite expires include deflate
 To run the container, we then just use the standard build and run commands, making sure to map the Apache port through to the host machine.
 
 ```bash
-docker build -t container .
-docker run -d -p 8080:8080 container
+> docker build -t container .
+
+> docker run -d -p 8080:8080 container
 ```
 
 ### Included test page
@@ -90,17 +91,21 @@ I needed a place to store the resulting container artifact, I decided to use an 
 To deploy the container registry, i ran:
 
 ```bash
-az acr create -n containerregistry -g weblinuxcontainer --sku Basic --admin-enabled true
-az acr credential show -n containerregistry
+> az acr create -n containerregistry -g weblinuxcontainer --sku Basic --admin-enabled true
+
+> az acr credential show -n containerregistry
 ```
 
 I navigated to the Dockerfile folder for my custom container and ran this:
 
 ```bash
-docker build -t container .
-docker login --username containerregistry --password <password from acr credential> containerregistry.azurecr.io
-docker tag container:latest containerregistry.azurecr.io/container:v1
-docker push containerregistry.azurecr.io/containerregistry/container:v1
+> docker build -t container .
+
+> docker login --username containerregistry --password <password from acr credential> containerregistry.azurecr.io
+
+> docker tag container:latest containerregistry.azurecr.io/container:v1
+
+> docker push containerregistry.azurecr.io/containerregistry/container:v1
 ```
 
 ### Testing it all out
@@ -108,15 +113,17 @@ docker push containerregistry.azurecr.io/containerregistry/container:v1
 To test and use this all in Azure we've just got to build the Linux Web App Service plan and create the Web App inside it. Once this is done, we can hook up the Azure container registry to the deployed Web App and then hopefully end up with a web page, or two!
 
 ```bash
-az appservice plan create -g weblinuxcontainer -n weblinuxplan --is-linux --sku B1
-az webapp create -g weblinuxcontainer -p weblinuxplan -n weblinuxapp
-az webapp config container set --name weblinuxapp --resource-group weblinuxcontainer --docker-custom-image-name container:v1 --docker-registry-server-url https://containerregistry.azurecr.io --docker-registry-server-user containerregistryuser --docker-registry-server-password <container registry password>
+> az appservice plan create -g weblinuxcontainer -n weblinuxplan --is-linux --sku B1
+
+> az webapp create -g weblinuxcontainer -p weblinuxplan -n weblinuxapp
+
+> az webapp config container set --name weblinuxapp --resource-group weblinuxcontainer --docker-custom-image-name container:v1 --docker-registry-server-url https://containerregistry.azurecr.io --docker-registry-server-user containerregistryuser --docker-registry-server-password <container registry password>
 ```
 
 The Azure container service should then figure out the website port automagically, if it doesn't you will need to tell Azure, you can do this with:
 
 ```bash
-az webapp config appsettings set --resource-group weblinuxcontainer --name weblinuxapp --settings WEBSITES_PORT=8080
+> az webapp config appsettings set --resource-group weblinuxcontainer --name weblinuxapp --settings WEBSITES_PORT=8080
 ```
 
 You can then imagine how easy it is to start hooking in Azure MySQL, or another database as the data layer to this app. If your application requires some data to be available to the container, for test purposes or some legacy application storge in an 'uploads' folder there is always the ability to use the app service storage account to keep state within the scale set.
@@ -124,7 +131,7 @@ You can then imagine how easy it is to start hooking in Azure MySQL, or another 
 You will need to upload the files over FTP to this storage account. If you do this in production, remember to set backups!
 
 ```bash
-az webapp config container set --name weblinuxapp --resource-group weblinuxcontainer --enable-app-service-storage true
+> az webapp config container set --name weblinuxapp --resource-group weblinuxcontainer --enable-app-service-storage true
 ```
 
 ## Final thoughts
