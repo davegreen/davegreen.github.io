@@ -29,6 +29,8 @@ The very first step is running up my test machine. Since this is going to be a p
 
 Once I've got everything installed (Git, Docker-CE, etc.), it's time to get an initial PHP web app up to test. Since my plan was to deploy a custom Docker image, rather than reinvent the wheel, I wanted to find a base Apache/PHP5 docker image that I could test on Azure, before adding PhantomJS. Luckily, I found the ideal Docker image to start with in the [Azure-App-Service/PHP repository](https://github.com/Azure-App-Service/php) (5.6.21-apache).
 
+**Note:** If you're trying to install the [Azure CLI tools](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) but getting odd failures, make sure to install *python-pip* first. The install script doesn't always seem to catch the dependency being missing, but this fixed it for me.
+
 I started testing this docker image with a test PHP file I could include, rather than *hostingstart.html*, other than that, I left the Dockerfile as default (for now).
 
 ```diff
