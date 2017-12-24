@@ -45,11 +45,11 @@ docker build -t container .
 docker run -d -p 8080:8080 container
 ```
 
-#### Included test page
+### Included test page
 
 ![Included test page](../assets/img/containersuccess.png)
 
-#### And just for completeness, my PHP test page
+### And just for completeness, my PHP test page
 
 ![PHP test page](../assets/img/containersuccess2.png)
 
