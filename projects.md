@@ -42,20 +42,18 @@ A personal project to create a flexible Microsoft Windows frontend to the [udpc
 
 - - -
 
-## Books
-
-### As a Technical Reviewer
+## Books (As a Technical Reviewer)
 
 Technical review and feedback, making sure the technical content of the book was correct and that examples and code presented were functional and conformed to best practices.
 
-#### [Mastering Active Directory](https://www.packtpub.com/networking-and-servers/mastering-active-directory) by Dishan Francis (Packt Publishing)
+### [Mastering Active Directory](https://www.packtpub.com/networking-and-servers/mastering-active-directory) by Dishan Francis (Packt Publishing)
 
 A well thought out book covering a large amount of the Active Directory landscape.
 
-#### [Active Directory with PowerShell](https://www.packtpub.com/networking-and-servers/active-directory-powershell) by Uma Yellapragada (Packt Publishing)
+### [Active Directory with PowerShell](https://www.packtpub.com/networking-and-servers/active-directory-powershell) by Uma Yellapragada (Packt Publishing)
 
 A nice book and would certainly help anyone just getting started with scripting with either Active Directory or PowerShell.
 
-#### [Getting Started with Powershell](https://www.packtpub.com/networking-and-servers/getting-started-powershell) by Michael Shepard (Packt Publishing)
+### [Getting Started with Powershell](https://www.packtpub.com/networking-and-servers/getting-started-powershell) by Michael Shepard (Packt Publishing)
 
 A well thought out introduction to PowerShell aimed at beginners, split up into easy to digest pieces.
