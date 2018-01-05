@@ -10,25 +10,21 @@ categories: [Projects]
 * Contents
 {:toc}
 
+- - -
+
 ## Code/Scripts
 
 ### [My GitHub Gists](https://gist.github.com/davegreen)
 
 Assorted random snippets of code I have written and find useful.
 
-- - -
-
 ### [Timezone](https://www.powershellgallery.com/packages/Timezone/)
 
 A PowerShell module for getting and setting the system timezone, like tzutil (and uses tzutil), but for PowerShell! [Source (GitHub)](https://github.com/davegreen/PowerShell/tree/master/Modules/Timezone)
 
-- - -
-
 ### [ShadowGroupSync](https://github.com/davegreen/shadowGroupSync)
 
 A PowerShell script for managing Active Directory shadow groups.
-
-- - -
 
 ### [PiCH](https://github.com/davegreen/PiCH.git)
 
@@ -36,13 +32,9 @@ PiCentralHeating - A combo hardware/software project for a low cost central heat
 
 ![PiCH temperature board image](../assets/img/2013tempboard1.jpg)
 
-- - -
-
 ### [backupDHCPLogs](https://github.com/davegreen/backupDhcpLogs.git)
 
 A PowerShell module for backing up DHCP logs for audit or retention purposes.
-
-- - -
 
 ### [UDPCastFE](https://github.com/davegreen/udpcastFE.git)
 
@@ -60,13 +52,9 @@ Technical review and feedback, making sure the technical content of the book was
 
 A well thought out book covering a large amount of the Active Directory landscape.
 
-- - -
-
 #### [Active Directory with PowerShell](https://www.packtpub.com/networking-and-servers/active-directory-powershell) by Uma Yellapragada (Packt Publishing)
 
 A nice book and would certainly help anyone just getting started with scripting with either Active Directory or PowerShell.
-
-- - -
 
 #### [Getting Started with Powershell](https://www.packtpub.com/networking-and-servers/getting-started-powershell) by Michael Shepard (Packt Publishing)
 
