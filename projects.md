@@ -7,6 +7,9 @@ comments: false
 categories: [Projects]
 ---
 
+* Contents
+{:toc}
+
 ## Code/Scripts
 
 ### [My GitHub Gists](https://gist.github.com/davegreen)
