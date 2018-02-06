@@ -144,9 +144,9 @@ This worked... but only with small amounts of files. Once there is over 300 file
 
 Hopefully this was a nice intro into using custom Docker containers on Azure. It will definitely stay as a good set of notes for me for a while :)
 
-**Update:** For PhantomJS to work as expected, I has to add an environent variable export into /etc/apache2/envvars. This is shown in the docker specification below:
+**Update:** For PhantomJS to work as expected, I has to add an environent variable export into /etc/apache2/envvars. This is shown in the docker statement I added below:
 
-```docker
+```
 RUN { \
         echo 'export QT_QPA_PLATFORM=offscreen'; \
     } >> /etc/apache2/envvars
