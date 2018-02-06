@@ -143,3 +143,11 @@ Because I am using the built in app service storage account, I tried getting som
 This worked... but only with small amounts of files. Once there is over 300 files in the folder structure, I see connection failures start to plague the test deployment, which is annoying! I tried a few things, but haven't managed to get past this yet. I'll push on with this and see where I get, there's a couple more ideas I have in mind to perhaps make this better.
 
 Hopefully this was a nice intro into using custom Docker containers on Azure. It will definitely stay as a good set of notes for me for a while :)
+
+**Update:** For PhantomJS to work as expected, I has to add an environent variable export into /etc/apache2/envvars. This is shown in the docker specification below:
+
+```docker
+RUN { \
+        echo 'export QT_QPA_PLATFORM=offscreen'; \
+    } >> /etc/apache2/envvars
+```
