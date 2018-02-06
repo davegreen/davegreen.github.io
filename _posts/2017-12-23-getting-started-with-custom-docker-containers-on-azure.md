@@ -144,7 +144,7 @@ This worked... but only with small amounts of files. Once there is over 300 file
 
 Hopefully this was a nice intro into using custom Docker containers on Azure. It will definitely stay as a good set of notes for me for a while :)
 
-**Update:** For PhantomJS to work as expected, I has to add an environent variable export into /etc/apache2/envvars. This is shown in the docker statement I added below:
+**Update:** For PhantomJS to work as expected, I has to add an environment variable export into /etc/apache2/envvars. This is shown in the docker statement I added below:
 
 ```
 RUN { \
