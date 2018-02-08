@@ -144,10 +144,14 @@ This worked... but only with small amounts of files. Once there is over 300 file
 
 Hopefully this was a nice intro into using custom Docker containers on Azure. It will definitely stay as a good set of notes for me for a while :)
 
-**Update:** For PhantomJS to work as expected, I has to add an environment variable export into /etc/apache2/envvars. This is shown in the docker statement I added below:
+**Update:** For PhantomJS to work as expected, I has to install it from a location other than th debian repository, as it seems to be slightly broken. This is shown in the docker statement I added below:
 
 ```
 RUN { \
-        echo 'export QT_QPA_PLATFORM=offscreen'; \
-    } >> /etc/apache2/envvars
+        cd /root; \
+        wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2; \
+        tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2; \
+        cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs; \
+        ln -sf /usr/local/bin/phantomjs /usr/bin/phantomjs; \
+    }
 ```
