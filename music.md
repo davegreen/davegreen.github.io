@@ -18,7 +18,7 @@ A metal band - to be updated soon :)
 
 ## Previous Bands
 
-### [The Chaser](https://www.facebook.com/thechaseruk) (Punk-Rock)
+### The Chaser (Punk-Rock)
 
 - When: 2012-2013
 - Instruments: Bass Guitar, Backing Vocals
