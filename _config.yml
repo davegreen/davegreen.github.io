@@ -8,7 +8,7 @@ title: TookItAway
 email: david.green@tookitaway.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
   A blog about my adventures in IT, PowerShell and music.
-url: http://tookitaway.co.uk # the base hostname & protocol for your site, e.g. http://example.com
+url: https://tookitaway.co.uk # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: /
 twitter_username: neongreenie
 github_username: davegreen
