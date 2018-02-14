@@ -58,28 +58,22 @@ To run the container, we then just use the standard build and run commands, maki
 
 ### Getting PhantomJS in the container
 
+**Update:** This package is broken and seems to require bits of QT to function correctly. I have edited the post to install the PhantomJS package from binaries provided by [ariya](https://bitbucket.org/ariya/phantomjs/downloads/)
+
 Because the requirements of the web app only need the PhantomJS binary and nothing else fancy (like a listen port), we don't need to set up a separate container for PhantomJS, we can just install the package into the container to be used directly by the web application. The largest problem with this, is that the docker image is based on Debian version 8 (Jessie), rather than the current stable release (version 9, 'Stretch'). The PhantomJS package is only available in [jessie-backports](https://packages.debian.org/jessie-backports/phantomjs), whereas in stable, it's in the main package list.
 
-To get this working, this led me to edit the package install RUN line to add the backports repository and make sure that PhantomJS is installed.
+To get this working initially, this led me to edit the package install RUN line to add the backports repository and make sure that PhantomJS is installed. Unfortunately, this did not work as the package has some issues, so I had to install it from another source.
 
-This changes the start of the package install RUN line as shown.
+This changes the docker file, but only adds a few different RUN lines, rather than editing too much.
 
 ```diff
--RUN apt update \
-+RUN echo 'deb http://ftp.debian.org/debian jessie-backports main' >> /etc/apt/sources.list \
-+    && apt update \
-     && apt install -y --no-install-recommends \
-         libpng12-dev \
-         libjpeg-dev \
-         libpq-dev \
-         libmcrypt-dev \
-         libldap2-dev \
-         libldb-dev \
-         libicu-dev \
-         libgmp-dev \
-         libmagickwand-dev \
-+        phantomjs \
-         openssh-server vim curl wget tcptraceroute \
++RUN { \
++        cd /root; \
++        wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2; \
++        tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2; \
++        cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs; \
++        ln -sf /usr/local/bin/phantomjs /usr/bin/phantomjs; \
++    }
 ```
 
 Now I can build the resulting container and test locally, by pushing things into /home/site/wwwroot and as if by magic, it works with either a local or Azure MySQL instance (once I'd added my public IP to the access list :P).
@@ -143,15 +137,3 @@ Because I am using the built in app service storage account, I tried getting som
 This worked... but only with small amounts of files. Once there is over 300 files in the folder structure, I see connection failures start to plague the test deployment, which is annoying! I tried a few things, but haven't managed to get past this yet. I'll push on with this and see where I get, there's a couple more ideas I have in mind to perhaps make this better.
 
 Hopefully this was a nice intro into using custom Docker containers on Azure. It will definitely stay as a good set of notes for me for a while :)
-
-**Update:** For PhantomJS to work as expected, I has to install it from a location other than th debian repository, as it seems to be slightly broken. This is shown in the docker statement I added below:
-
-```
-RUN { \
-        cd /root; \
-        wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2; \
-        tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2; \
-        cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs; \
-        ln -sf /usr/local/bin/phantomjs /usr/bin/phantomjs; \
-    }
-```
