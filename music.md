@@ -31,7 +31,7 @@ A metal band - to be updated soon :)
 
 #### Releases
 
-[Illusion Never Lies](http://tookitaway.co.uk/wp-content/uploads/2011/12/IllusionNeverLies.mp3)
+[Illusion Never Lies](http://tookitaway.co.uk/assets/music/IllusionNeverLies.mp3)
 
 ### [Tom Bertram (Pop, Rock)](https://www.tombertram.co.uk/)
 
@@ -40,7 +40,7 @@ A metal band - to be updated soon :)
 
 #### Releases
 
-[Tom Bertram Band - (2011) Demo](http://tookitaway.co.uk/wp-content/uploads/2012/10/Tom-Bertram-Band-2011-Demo.zip)
+[Tom Bertram Band - (2011) Demo](http://tookitaway.co.uk/assets/music/Tom-Bertram-Band-2011-Demo.zip)
 
 [She's Like A Drug - (2011) Single (iTunes)](http://itunes.apple.com/gb/album/shes-like-a-drug-single/id466464328)
 
@@ -53,4 +53,4 @@ A metal band - to be updated soon :)
 
 #### Releases
 
-[Famous Grey - (2010) Demo](http://tookitaway.co.uk/wp-content/uploads/2011/07/Famous-Grey-2010-Demo.zip)
+[Famous Grey - (2010) Demo](http://tookitaway.co.uk/assets/music/Famous-Grey-2010-Demo.zip)
