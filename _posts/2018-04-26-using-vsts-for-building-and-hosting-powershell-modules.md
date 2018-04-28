@@ -41,7 +41,7 @@ I use the a project structure like the one used in the [Plaster](https://github.
 |-scriptanalyzer.settings.psd1
 ```
 
-As you can see, most of those files look pretty much identical to those you get from the NewModule example with one or two exceptions. The major one is *build.manifest.ps1* which is the script I use to build the manifest and stitch together all the pieces defining the module. This script gets called as part of the build and creates two files shown in the above structure, *Module.nuspec* and *Module.psd1*.
+As you can see, most of those files look pretty much identical to those you get from the [Plaster NewModule](https://github.com/PowerShell/Plaster/tree/master/examples/NewModule) example with one or two exceptions. The major one is *build.manifest.ps1* which is the script I use to build the manifest and stitch together all the pieces defining the module. This script gets called as part of the build and creates two files shown in the above structure, *Module.nuspec* and *Module.psd1*.
 
 Here's the content of this file, I've also used it in an example module hosted in GitHub [here](https://github.com/davegreen/PowerShell/tree/master/Modules/Example2).
 
