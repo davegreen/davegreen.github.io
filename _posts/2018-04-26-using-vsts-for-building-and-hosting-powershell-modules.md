@@ -7,21 +7,21 @@ comments: true
 categories: [Computers]
 ---
 
-I've been working with VSTS a lot recently as a source management solution. Rather than build and distribute my modules through a file share or some other weird and wacky way, I thought i'd try to use VSTS Package Management to run myself a PSGallery-alike, without running PSGallery! This is related to another coming-soon blog post about building and running a cloud platform business rule compliance testing solution using the VSTS hosted build runner too. 
+I've been working with VSTS a lot recently as a source management solution. Rather than build and distribute my modules through a file share or some other weird and wacky way, I thought i'd try to use VSTS Package Management to run myself a PSGallery-alike, without running PSGallery! This is related to another coming-soon blog post about building and running a cloud platform business rule compliance testing solution using the VSTS hosted build runner too.
 
-All of this was to work towards to run things in a little more of a continuous integration (CI) friendly way, hopefully making a start towards a [release pipeline model](https://docs.microsoft.com/en-us/powershell/dsc/whitepapers) for cloud service configurations. 
+All of this was to work towards to run things in a little more of a continuous integration (CI) friendly way, hopefully making a start towards a [release pipeline model](https://docs.microsoft.com/en-us/powershell/dsc/whitepapers) for cloud service configurations.
 
-## Getting Started
+# Getting Started
 
 So i started with [this great guide](https://roadtoalm.com/2017/05/02/using-vsts-package-management-as-a-private-powershell-gallery/) on how to do it manually, creating pakages and pushing them to VSTS Package Management. This works great, but I wanted to close the loop by automatically building my module, along with packing and pushing my nuget packages to VSTS. Here's how I did it...
 
 ## Generating the module manifest and nuspec file
 
-You don't have to generate both automagically, I suppose you could generate the nuspec from the module manifest, which would be quite straightforward. My way is not the only ay :) Anyways, based on all the reorganising I do of my modules, it's easier to generate both so I don't have to worry about the module manifest file list or the cmdlets/functions/aliases to export.
+You don't have to generate both automagically, I suppose you could generate the nuspec from the module manifest, which would be quite straightforward. My way is not the only way :) Anyways, based on all the reorganising I do of my modules, it's easier to generate both so I don't have to worry about the module manifest file list or the cmdlets/functions/aliases to export.
 
 I use the a project structure like the one used in the [Plaster](https://github.com/PowerShell/Plaster) module (since that's usually my starting point!). This means that a rough module structure looks like this:
 
-```
+```text
 \Module
 |-\release (.gitignored)
 |-\src
@@ -169,11 +169,11 @@ Once you've got those installed, read through the getting started with VSTS stuf
 
 We can add the remote git server with:
 
-> git remote add \<remote name\> \<repository url\>
+    git remote add \<remote name\> \<repository url\>
 
 Then initialise the empty remote server with all our content and history using:
 
-> git push -u \<remote name\> -all
+    git push -u \<remote name\> -all
 
 Now we should have our module in VSTS, looking a little lonely, just waiting to get built! We can go to **Build and Release > Packages** to start the process, but we might need to add an extension license before we do that.
 
@@ -203,7 +203,7 @@ So now we've got a module, it's built, it's tested, it's packed and pushed and r
 
 Remember the package feed we created earlier? Now the feed is created and we've pushed a package to it, it's got a use! If you navigate back to the **Build and Release > Packages**, then click **Connect to feed**, you can then copy the **Package source URL**, changing *nuget/v3* to *nuget/v2* which will look something like this:
 
-> https://<VSTSName>.pkgs.visualstudio.com/_packaging/<TeamName>/nuget/v2
+    https://<VSTSName>.pkgs.visualstudio.com/_packaging/<TeamName>/nuget/v2
 
 This is the Repository URL for the PSRepository we'll want to register, the only other detail we need will be the Personal Access Token (PAT), details of how to generate one [can be found here](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate?view=vsts) (accessible through your profile security page).
 
