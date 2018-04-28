@@ -160,12 +160,12 @@ OK! so hopefully you can implement this file to build your manifest and nuspec f
 
 ## Building the steps for 'pack and push'
 
-To build the steps for pack and push, you need to have the following prerequisites in place (i'm assuming you've already got git, or the first part of this post may have missed the mark):
+To build the steps for pack and push, you need to have the following prerequisites in place (i'm assuming you've already got git, or the first half of this post may have missed the mark):
 
 - [VSTS](https://www.visualstudio.com/team-services/) (obviously!)
 - [VSTS Package Management](https://docs.microsoft.com/en-us/vsts/package/install?view=vsts)
 
-Once you've got those installed, read through the getting started with VSTS stuff to get a good grounding in what it's all about, we can push the code to the remote origin, then we can build... the build!
+Once you've got those installed and read through the getting started with VSTS stuff to get a good grounding in what it's all about, We can push the code to the remote origin, then we can build... the build!
 
 We can add the remote git server with:
 
