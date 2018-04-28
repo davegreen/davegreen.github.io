@@ -11,6 +11,8 @@ I've been working with VSTS a lot recently as a source management solution. Rath
 
 All of this was to work towards to run things in a little more of a continuous integration (CI) friendly way, hopefully making a start towards a [release pipeline model](https://docs.microsoft.com/en-us/powershell/dsc/whitepapers) for cloud service configurations. 
 
+## Getting Started
+
 So i started with [this great guide](https://roadtoalm.com/2017/05/02/using-vsts-package-management-as-a-private-powershell-gallery/) on how to do it manually, creating pakages and pushing them to VSTS Package Management. This works great, but I wanted to close the loop by automatically building my module, along with packing and pushing my nuget packages to VSTS. Here's how I did it...
 
 ## Generating the module manifest and nuspec file
@@ -108,6 +110,8 @@ New-ModuleManifest @ModuleDescription
 $ModuleNuspec.Save("$(Split-Path -Path $ModuleRoot)\$((Get-Item -Path $ModuleRoot).BaseName).nuspec")
 ```
 
+## The build script
+
 This next small example is from **build.ps1**, showing where the manifest build is called, along with pre-installing any prerequisites needed, as generating the manifest requires me to import the module. I don't currently alter the **build.psake.ps1** file, as I want to be able to easily consume any updates to the psake script (although it should really be in the **build.settings.ps1** in that case!).
 
 ```powershell
@@ -152,7 +156,7 @@ if ($InstallPrerequisites) {
 Invoke-psake @psake
 ```
 
-OK! so hopefully you can implement this file to build your manifest and nuspec file, so you could run your **nuget pack** and **nuget push**, then call it a day, right? Kind of... But wouldn't it be easier for someone else to do the pack and push? Enter VSTS Package Management! You've been commiting all this to source control right?!
+OK! so hopefully you can implement this file to build your manifest and nuspec file, so you could run your **nuget pack** and **nuget push**, then call it a day, right? Kind of... But wouldn't it be easier for someone else to do the pack and push? Enter VSTS Package Management! You've been committing all this to source control right?!
 
 ## Building the steps for 'pack and push'
 
@@ -195,6 +199,8 @@ This step again is almost-default and just points to the target feed, nothing el
 
 So now we've got a module, it's built, it's tested, it's packed and pushed and ready to go! So how do we use it?
 
+## Installing modules from the feed
+
 Remember the package feed we created earlier? Now the feed is created and we've pushed a package to it, it's got a use! If you navigate back to the **Build and Release > Packages**, then click **Connect to feed**, you can then copy the **Package source URL**, changing *nuget/v3* to *nuget/v2* which will look something like this:
 
 > https://<VSTSName>.pkgs.visualstudio.com/_packaging/<TeamName>/nuget/v2
@@ -218,6 +224,8 @@ Register-PSRepository @Splat
 
 Install-Module -Repository PowerShell -Name Example2 -Scope CurrentUser -Credential $Cred -Verbose
 ```
+
+## Final thoughts
 
 The only issue I currently have is that since the package feed is immutable, you have to make sure you have upped the module version in order to get the push to work, or you end up with a build that works, but an error at the end like:
 
