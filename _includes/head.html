@@ -4,13 +4,13 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24855655-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', {{ site.google_analytics }});
+    gtag('config', '{{ site.google_analytics }}');
   </script>
 
   <!-- Enable responsiveness on mobile devices-->
