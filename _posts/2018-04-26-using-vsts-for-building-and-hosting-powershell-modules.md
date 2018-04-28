@@ -169,11 +169,11 @@ Once you've got those installed, read through the getting started with VSTS stuf
 
 We can add the remote git server with:
 
-    git remote add \<remote name\> \<repository url\>
+    git remote add <remote name> <repository url>
 
 Then initialise the empty remote server with all our content and history using:
 
-    git push -u \<remote name\> -all
+    git push -u <remote name> -all
 
 Now we should have our module in VSTS, looking a little lonely, just waiting to get built! We can go to **Build and Release > Packages** to start the process, but we might need to add an extension license before we do that.
 
