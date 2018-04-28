@@ -41,7 +41,7 @@ I use the a project structure like the one used in the [Plaster](https://github.
 |-scriptanalyzer.settings.psd1
 ```
 
-As you can see, most of those files look pretty much identical to those you get from the NewModule example with one or two exceptions. The major one is **build.manifest.ps1** which is the script I use to build the manifest and stitch together all the pieces defining the module. This script gets called as part of the build and creates two files shown in the above structure, **Module.nuspec** and **Module.psd1**.
+As you can see, most of those files look pretty much identical to those you get from the NewModule example with one or two exceptions. The major one is *build.manifest.ps1* which is the script I use to build the manifest and stitch together all the pieces defining the module. This script gets called as part of the build and creates two files shown in the above structure, *Module.nuspec* and *Module.psd1*.
 
 Here's the content of this file, I've also used it in an example module hosted in GitHub [here](https://github.com/davegreen/PowerShell/tree/master/Modules/Example2).
 
@@ -112,7 +112,7 @@ $ModuleNuspec.Save("$(Split-Path -Path $ModuleRoot)\$((Get-Item -Path $ModuleRoo
 
 ## The build script
 
-This next small example is from **build.ps1**, showing where the manifest build is called, along with pre-installing any prerequisites needed, as generating the manifest requires me to import the module. I don't currently alter the **build.psake.ps1** file, as I want to be able to easily consume any updates to the psake script (although it should really be in the **build.settings.ps1** in that case!).
+This next small example is from *build.ps1*, showing where the manifest build is called, along with pre-installing any prerequisites needed, as generating the manifest requires me to import the module. I don't currently alter the *build.psake.ps1* file, as I want to be able to easily consume any updates to the psake script (although it should really be in the *build.settings.ps1* in that case!).
 
 ```powershell
 [CmdletBinding()]
@@ -191,7 +191,7 @@ We'll create three steps, a simple build for the module! We're runing build.ps1,
 
 ![Nuget pack](../assets/img/VSTSnugetpack.PNG)
 
-This step is almost entirely as-is, just pointing to the expected path of the **Example2.nuspec** file to grab and pack up.
+This step is almost entirely as-is, just pointing to the expected path of the *Example2.nuspec* file to grab and pack up.
 
 ![Nuget pack](../assets/img/VSTSnugetpush.PNG)
 
