@@ -7,7 +7,7 @@ comments: true
 categories: [Computers]
 ---
 
-Following on from my recent module writing work, i've been using a little trick in some of my PowerShell modules to store a small amount of state that persists as long as the module is loaded. I've been using this strategy as a way to manage connections.
+Following on from my recent module writing work, i've been using a little trick in some of my PowerShell modules to store a small amount of state that persists as long as the module is loaded. I've been primarily using this strategy as a way to manage connections for SharePoint and REST services.
 
 My example here is a small one derived loosely from a SharePoint Client-Side Object Model (CSOM) module I use and maintain. Essentially, in the module .psm1 file the variable is defined and then used by a couple of functions to set, get and clear the connection data using the `$script:variable` scoping, as shown below:
 
