@@ -33,7 +33,7 @@ Function Connect-SharePoint {
     )
 
     # Login
-    $SPOContext = New-Object Microsoft.SharePoint.Client.ClientContext($AdminUri)
+    $SPOContext = New-Object Microsoft.SharePoint.Client.ClientContext($Uri)
     $SPOContext.Credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials(
         $Credential.UserName,
         $Credential.Password
