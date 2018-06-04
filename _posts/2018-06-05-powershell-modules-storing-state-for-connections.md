@@ -11,6 +11,18 @@ Following on from my recent module writing work, i've been using a little trick 
 
 My example here is a small one derived loosely from a SharePoint Client-Side Object Model (CSOM) module I use and maintain. Essentially, in the module .psm1 file the variable is defined and then used by a couple of functions to set, get and clear the connection data using the `$script:variable` scoping, as shown below:
 
+NOTE: You need the SharePoint Online PowerShell module for the SharePoint DLLs!
+
+```powershell
+$Assemblies = @(
+    "$env:ProgramFiles\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.dll"
+    "$env:ProgramFiles\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.SharePoint.Client.Runtime.dll"
+    "$env:ProgramFiles\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell\Microsoft.Online.SharePoint.Client.Tenant.dll"
+)
+
+Add-Type -Path $Assemblies -Verbose
+```
+
 ```powershell
 # SharePoint connection states
 [System.Diagnostics.CodeAnalysis.SuppressMessage('PSUseDeclaredVarsMoreThanAssigments', '')]
