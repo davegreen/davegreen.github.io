@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PowerShell Modules - Storing stste for connections and flags
+title: PowerShell Modules - Storing state for connections
 date: 2018-06-05 20:00
 author: Dave Green
 comments: true
