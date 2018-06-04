@@ -33,18 +33,18 @@ Function Connect-SharePoint {
     )
 
     # Login
-    $SPOContext = New-Object Microsoft.SharePoint.Client.ClientContext($Uri)
-    $SPOContext.Credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials(
+    $SPContext = New-Object Microsoft.SharePoint.Client.ClientContext($Uri)
+    $SPContext.Credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials(
         $Credential.UserName,
         $Credential.Password
     )
 
     try {
-        $SPOContext.ExecuteQuery()
-        $null = $Script:Connection.Add($SPOContext)
+        $SPContext.ExecuteQuery()
+        $null = $Script:Connection.Add($SPContext)
 
         if ($PassThru) {
-            $SPOContext
+            $SPContext
         }
     }
     catch {
