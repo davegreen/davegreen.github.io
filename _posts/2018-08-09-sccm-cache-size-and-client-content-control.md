@@ -51,6 +51,7 @@ function Clear-CCMCache {
 
         .NOTES
             Author: David Green
+            Credit: https://www.reddit.com/r/SCCM/comments/4mx9h9/clean_ccmcache_on_a_regular_schedule/d3z8px0/?context=3
     #>
 
     [CmdletBinding()]
