@@ -17,7 +17,7 @@ One thing was to force clear the client cache before install, to use the minimal
 
 For both of these things, I used my trusty friend PowerShell to load the SCCM client management COM object, then expand or clear the client content. Big thanks to both [OzThe2](https://fearthemonkey.co.uk/how-to-change-the-ccmcache-size-using-powershell/) and [kittiah](https://www.reddit.com/r/SCCM/comments/4mx9h9/clean_ccmcache_on_a_regular_schedule/d3z8px0/?context=3) on reddit for the info, near enough just altered things into functions to make my deployment tidier.
 
-Here's the clean cache script merged into the function. For the cachs size script, see [here](https://github.com/ozthe2/Powershell/blob/master/SCCM/SetCCMCacheSize):
+Here's the clean cache script merged into the function. For the cache size script, see [here](https://github.com/ozthe2/Powershell/blob/master/SCCM/SetCCMCacheSize):
 
 ```powershell
 #Requires -RunAsAdministrator
