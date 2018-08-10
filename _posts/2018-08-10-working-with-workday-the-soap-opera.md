@@ -13,9 +13,11 @@ I've been having a look recently at quite a few web APIs (REST and SOAP and all 
 
 So looking at the [Workday API](https://community.workday.com/api) pages, you might think SOAP? that's old school!, use REST! For Workday, fortunately there is a REST API that's easy to get to grips with, however it's very difficult to get the security right and automate the login/authorization piece (at least with PowerShell, or my knowledge thereof). This means I've been concentrating on the SOAP API, which seems harder to set up the query, but a bit more usable from my position and security standpoint.
 
-OK, so **New-WebServiceProxy** to the rescue? I wish. For some reason I cannot get it to authenticate requests, so I had to fall back on good old **Invoke-WebRequest** for this one! Essentially, I took a bunch of syntax for queries that already worked and amalgamated them in one string replacement hackfest. It's not the cleanest piece of work in the world, but it gets the job done and allows me to keep trying **New-WebServiceProxy** in the background until I get that working. Any suggestions? Please let me know!
+OK, so a SOAP API - **New-WebServiceProxy** to the rescue? AGain, not much luck. For some reason I cannot get it to authenticate requests, so I had to fall back on good old **Invoke-WebRequest** for this one!
 
-Here's the functions:
+Essentially, I took a bunch of syntax for queries that already worked and amalgamated them in one string replacement hackfest. It's not the cleanest piece of work in the world, but it gets the job done and allows me to keep trying **New-WebServiceProxy** in the background until I get that working. Any suggestions? Please let me know!
+
+Here's the function to get the data, you can delve into the returned object and get a load of good data out. I'll clean up a function for exposing the object in a nice way too at some point soon, hopefully I can get to the point where I can release the entire module!
 
 ```powershell
 function GetWDWorkerData {
