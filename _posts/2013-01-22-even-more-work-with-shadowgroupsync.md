@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Computers]
 ---
-There has been a couple of updates to the shadowGroupSync tool over the past few days. Apart from a bit of development, I also I went and threw it to GitHub. You can check out my [previous posts](http://tookitaway.co.uk/tag/shadowgroupsync/) on it, or grab the [latest version](https://github.com/davegreen/shadowGroupSync.git). There's also a development branch in the repository that lets you choose the type of group to create. *UPDATE: The features from the development branch are now all in the stable version.*
+There has been a couple of updates to the shadowGroupSync tool over the past few days. Apart from a bit of development, I also I went and threw it to GitHub. You can check out my previous posts on it, or grab the [latest version](https://github.com/davegreen/shadowGroupSync.git). There's also a development branch in the repository that lets you choose the type of group to create. *UPDATE: The features from the development branch are now all in the stable version.*
 
 The stable branch has also had a few features added and a couple of little snags fixed. The main new feature is the ability to specify multiple source organisational units for inclusion into a single shadow group. These changes make the utility very useful for generating distribution lists or access groups based on whatever conditions you want; like employee type, manager, or existing group memberships.
 
