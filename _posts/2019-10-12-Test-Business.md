@@ -11,7 +11,8 @@ Oh my, what a great day! I met loads of great people and in general had a great 
 
 Things started well with the keynote by Richard Siddaway, on his birthday, no less! He gave a great session on where we are, what we're here for and also a bit on where we're going, as well as a great call to action, that consisted of contribute, contribute, contribute!
 
-Right after a quick break, I gave my Test-Business session, which was nervewracking, but ultimately really good (i think?!). I had some great feedback afterward that really made my day. As long as someone is interested to ttry my code, I'm happy. Slides and content are [on GitHub](https://github.com/davegreen/PSDay2018). I'm planning to also do a bit of cleanup and release the module soon as a preview module on the PowerShell Gallery.
+Right after a quick break, I gave my Test-Business session, which was nervewracking, but ultimately really good (i think?!). I had some great feedback afterward that really made my day. As long as someone is interested to try my code, I'm happy. Slides and content are [on GitHub](https://github.com/davegreen/PSDay2018). 
+I'm planning to also do a bit of cleanup and release the module soon as a preview module on the PowerShell Gallery.
 
 The rest of the day was a blur of amazing sessions, speaking to amazing people and a quick jaunt to a pub for a bit more of a geek session! In no particular order, my takeaways were:
 
