@@ -10,8 +10,7 @@ If you’ve come to this post directly, it's probably useful for you to read thr
 
 As a recap, you'll remember that I decided to set up two packages for the configuring and updating of the BIOS. Just in case you want a reference for the BIOS update portaion of the structure, here it is again.
 
-    SCCMSources\OSD\Packages
-    BIOSUpdate\HP Probook
+    SCCMSources\OSD\Packages\BIOSUpdate\HP Probook
         BIOSPW.bin              (Encrypted BIOS password)
         HPBIOSUPDREC.exe        (New BIOS update utility)
         hpqFlash.exe            (Old BIOS update utility)

@@ -15,20 +15,20 @@ I considered using PowerShell for this, however it takes a little while to start
 I've set up the package for HP machines I need to configure and update as follows:
 
     SCCMPackages\HP-UEFI\
-        68ICF.CAB (UEFI firmware - EliteBook 8x70p)
-        BiosConfigUtility.exe   (BIOS config utility - x86)
-        BiosConfigUtility64.exe (BIOS config utility - x64)
-        BIOSPW.bin              (Encrypted BIOS password)
-        ConfigureUEFI.cmd (UEFI config command file)
-        EliteDesk800G2-Win7.cfg (UEFI configuration - Win 7)
+        68ICF.CAB                (UEFI firmware - EliteBook 8x70p)
+        BiosConfigUtility.exe    (BIOS config utility - x86)
+        BiosConfigUtility64.exe  (BIOS config utility - x64)
+        BIOSPW.bin               (Encrypted BIOS password)
+        ConfigureUEFI.cmd        (UEFI config command file)
+        EliteDesk800G2-Win7.cfg  (UEFI configuration - Win 7)
         EliteDesk800G2-Win10.cfg (UEFI configuration - Win 10)
-        EliteBook8x0G3-Win7.cfg (UEFI configuration - Win 7)
+        EliteBook8x0G3-Win7.cfg  (UEFI configuration - Win 7)
         EliteBook8x0G3-Win10.cfg (UEFI configuration - Win 10)
-        EliteBook8x70p-Win7 (UEFI configuration - Win7)
-        N75_0110.bin (UEFI firmware - EliteBook 8x0 G3)
-        N21_0219.bin (UEFI firmware - EliteDesk 800 G2 SFF)
-        UpdateBIOS.cmd (UEFI update command file HPqflash models)
-        UpdateUEFI.cmd (UEFI update command file HPBIOSUPDREC models)
+        EliteBook8x70p-Win7      (UEFI configuration - Win7)
+        N75_0110.bin             (UEFI firmware - EliteBook 8x0 G3)
+        N21_0219.bin             (UEFI firmware - EliteDesk 800 G2 SFF)
+        UpdateBIOS.cmd           (UEFI update command file HPqflash models)
+        UpdateUEFI.cmd           (UEFI update command file HPBIOSUPDREC models)
 
 A sample set of files for all of this can be [found on GitHub](https://github.com/davegreen/miscellaneous/tree/master/SCCMPackages/HP-UEFI), except the HP binaries and firmware, which need to be downloaded from HP.
 
