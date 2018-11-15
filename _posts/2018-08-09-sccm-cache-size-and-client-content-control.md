@@ -15,7 +15,7 @@ This required me to do two things to ensure the SCCM clients wouldn't run into t
 
 One thing was to force clear the client cache before install, to use the minimal amount of space and free up space that may have been used for deployments that day, especially if the machine was freshly deployed, whee this is usually an issue. The second thing was to temporarily increase the cache size for the install with a silent required application, then reset/leave it to the SCCM policy afterward, since these apps are very rare.
 
-For both of these things, I used my trusty friend PowerShell to load the SCCM client management COM object, then expand or clear the client content. Big thanks to both [OzThe2](https://fearthemonkey.co.uk/how-to-change-the-ccmcache-size-using-powershell/) and [kittiah](https://www.reddit.com/r/SCCM/comments/4mx9h9/clean_ccmcache_on_a_regular_schedule/d3z8px0/?context=3) on reddit for the info, near enough just altered things into functions to make my deployment tidier.
+For both of these things, I used my trusty friend PowerShell to load the SCCM client management COM object, then expand or clear the client content. Big thanks to both [OzThe2](https://fearthemonkey.co.uk/how-to-change-the-ccmcache-size-using-powershell and [kittiah](https://www.reddit.com/r/SCCM/comments/4mx9h9/clean_ccmcache_on_a_regular_schedule/d3z8px0/?context=3) on reddit for the info, near enough just altered things into functions to make my deployment tidier.
 
 Here's the clean cache script merged into the function. For the cache size script, see [here](https://github.com/ozthe2/Powershell/blob/master/SCCM/SetCCMCacheSize):
 

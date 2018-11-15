@@ -24,7 +24,7 @@ A metal band - to be updated soon :)
 - Instruments: Bass Guitar, Backing Vocals
 - No releases.
 
-### [Warbound](http://fearthemonkey.co.uk/bands/warbound/) (Guest Musician) (Thrash Metal)
+### [Warbound](http://fearthemonkey.co.uk/bands/warbound) (Guest Musician) (Thrash Metal)
 
 - When: 2011
 - Instrument: Bass Guitar
@@ -33,7 +33,7 @@ A metal band - to be updated soon :)
 
 [Illusion Never Lies](https://tookitaway.co.uk/assets/music/IllusionNeverLies.mp3)
 
-### [Tom Bertram (Pop, Rock)](https://www.tombertram.co.uk/)
+### [Tom Bertram (Pop, Rock)](https://www.tombertram.co.uk)
 
 - When: 2010-2011
 - Instruments: Bass Guitar, Backing Vocals

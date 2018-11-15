@@ -10,7 +10,7 @@ I've recently been doing some work with System Center Configuration Manager (SCC
 
 As an aside to this, I'm not currently using the [Microsoft Deployment Toolkit](http://technet.microsoft.com/en-gb/windows/dn475741.aspx) (MDT) in any real way, however my solution does use a component of it in order to display the PowerShell script to the user. This gave me a good excuse to run through it and start to check it out with the idea of using it more down the line.
 
-The solution I found that almost did what I wanted can be found [here](http://www.scconfigmgr.com/2013/10/02/prompt-for-computer-name-during-osd-with-powershell/) (I've contributed my alterations there too in the comments. Thanks very much to Nickolaj for his script, as it saved me a fair bit of work!
+The solution I found that almost did what I wanted can be found [here](http://www.scconfigmgr.com/2013/10/02/prompt-for-computer-name-during-osd-with-powershell) (I've contributed my alterations there too in the comments. Thanks very much to Nickolaj for his script, as it saved me a fair bit of work!
 
 To run the script, a few things have to be done first (Instructions with screenshots can be found in Nickolaj's post on scconfigmgr.com.
 

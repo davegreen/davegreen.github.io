@@ -13,7 +13,7 @@ All of this was to work towards to run things in a little more of a continuous i
 
 # Getting Started
 
-So i started with [this great guide](https://roadtoalm.com/2017/05/02/using-vsts-package-management-as-a-private-powershell-gallery/) on how to do it manually, creating pakages and pushing them to VSTS Package Management. This works great, but I wanted to close the loop by automatically building my module, along with packing and pushing my nuget packages to VSTS. Here's how I did it...
+So i started with [this great guide](https://roadtoalm.com/2017/05/02/using-vsts-package-management-as-a-private-powershell-gallery on how to do it manually, creating pakages and pushing them to VSTS Package Management. This works great, but I wanted to close the loop by automatically building my module, along with packing and pushing my nuget packages to VSTS. Here's how I did it...
 
 ## Generating the module manifest and nuspec file
 
@@ -162,7 +162,7 @@ OK! so hopefully you can implement this file to build your manifest and nuspec f
 
 To build the steps for pack and push, you need to have the following prerequisites in place (i'm assuming you've already got git, or the first half of this post may have missed the mark):
 
-- [VSTS](https://www.visualstudio.com/team-services/) (obviously!)
+- [VSTS](https://www.visualstudio.com/team-services (obviously!)
 - [VSTS Package Management](https://docs.microsoft.com/en-us/vsts/package/install?view=vsts)
 
 Once you've got those installed and read through the getting started with VSTS stuff to get a good grounding in what it's all about, We can push the code to the remote origin, then we can build... the build!

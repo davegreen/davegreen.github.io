@@ -16,13 +16,13 @@ It's also handy if, like me, you've started on the new MCSA/MCSE tracks and want
 - [Windows Server 2012 Virtual Labs](http://technet.microsoft.com/en-US/windowsserver/hh968267.aspx)
 - [Microsoft Virtual Academy (Windows Server)](https://www.microsoftvirtualacademy.com/topics/product-windows-server-en)
 - [Channel9 (Windows Server)](http://channel9.msdn.com/Tags/windows+server)
-- [Ask Premier Field Engineering (PFE) Platforms Blog](http://blogs.technet.com/b/askpfeplat/)
-- [Windows Server Blog](http://blogs.technet.com/b/windowsserver/)
+- [Ask Premier Field Engineering (PFE) Platforms Blog](http://blogs.technet.com/b/askpfeplat)
+- [Windows Server Blog](http://blogs.technet.com/b/windowsserver)
 - [PowerShell support for Server 2012](http://technet.microsoft.com/en-us/library/hh801904.aspx)
-- [Hey, Scripting Guy! Blog](http://blogs.technet.com/b/heyscriptingguy/)
-- [PowerScripting Podcast](http://powerscripting.wordpress.com/)
+- [Hey, Scripting Guy! Blog](http://blogs.technet.com/b/heyscriptingguy)
+- [PowerScripting Podcast](http://powerscripting.wordpress.com)
 - [Free Microsoft EBooks (TechNet)](http://social.technet.microsoft.com/wiki/contents/articles/11608.e-book-gallery-for-microsoft-technologies.aspx#[Category]WindowsServer) - Introducing Windows Server 2012
-- [Ask The Directory Services Team Blog](http://blogs.technet.com/b/askds/)
+- [Ask The Directory Services Team Blog](http://blogs.technet.com/b/askds)
 - [Post-Graduate AD Studies (From AskDS Team Blog)](http://blogs.technet.com/b/askds/archive/2010/07/27/post-graduate-ad-studies.aspx)
 - [Everything you need to get started with Active Directory](http://blogs.technet.com/b/ashleymcglone/archive/2012/01/03/everything-you-need-to-get-started-with-active-directory.aspx)
 

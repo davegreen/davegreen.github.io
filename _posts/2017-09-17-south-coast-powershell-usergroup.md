@@ -12,4 +12,4 @@ It was the first time i'd ever presented to a room of (mostly) strangers, but it
 
 You can find the presentation and the code on [GitHub](https://github.com/powershellorguk/SouthCoast/tree/master/Meetups/2017/June/Build%20automation%20with%20psake)
 
-If you are in the area, I strongly recommend you check it out! The meetup group for the South Coast group is [here](https://www.meetup.com/UK-South-Coast-PowerShell-User-Group/) and the other user groups in the UK and details about them are [here](https://powershell.org.uk/about/).
+If you are in the area, I strongly recommend you check it out! The meetup group for the South Coast group is [here](https://www.meetup.com/UK-South-Coast-PowerShell-User-Group) and the other user groups in the UK and details about them are [here](https://powershell.org.uk/about).

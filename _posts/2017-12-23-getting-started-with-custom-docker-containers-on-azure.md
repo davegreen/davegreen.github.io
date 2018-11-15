@@ -9,7 +9,7 @@ categories: [Computers]
 
 This post is something a little bit different to what I normally post (Hint: Linux :)), but I'm not a platform snob, you've got to use the best tool for the job!
 
-In this case, the customer requirements were to run a PHP5 web application in Apache, with a MySQL backend, plus a few PHP modules and [PhantomJS](http://phantomjs.org/) for charting, so Linux it is.
+In this case, the customer requirements were to run a PHP5 web application in Apache, with a MySQL backend, plus a few PHP modules and [PhantomJS](http://phantomjs.org for charting, so Linux it is.
 
 Before I got involved, the plan was for a two-tier architecture hosted using Azure IaaS VMs. From a customer point of view, this is a reasonably expensive solution, as there is a fair bit of intervention required for maintenance and backups, etc. which would inflate the cost. This solution also falls into a bit of a cost pit from Azure [availability recommendations](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/manage-availability?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json), which would require at least 4 VMs, plus load balancing get deployed, making the solution even more expensive.
 
@@ -21,7 +21,7 @@ All of the command lines I use in this example are right to the best of my abili
 
 I'd heard about Docker containers a bit, from a few people and I knew it would be a good fit for the web frontend for this (assuming I could get it working) and although this would be my first proper foray into using Docker for a production service, I was reasonably confident this would be the way forward. I could always fall back on the old plan, right?
 
-That covers the web frontend you say, but what about the database! For the DB I noticed [this little gem](https://azure.microsoft.com/en-us/services/mysql/) appear not so long ago in Azure, so that's my target for that sorted too! (Yes I know it's preview, but the roadmap points to early 2018 as GA. This app won't be in production before then).
+That covers the web frontend you say, but what about the database! For the DB I noticed [this little gem](https://azure.microsoft.com/en-us/services/mysql appear not so long ago in Azure, so that's my target for that sorted too! (Yes I know it's preview, but the roadmap points to early 2018 as GA. This app won't be in production before then).
 
 ## Let's play... with Docker containers!
 
@@ -58,7 +58,7 @@ To run the container, we then just use the standard build and run commands, maki
 
 ### Getting PhantomJS in the container
 
-**Update:** This package is broken and seems to require bits of QT to function correctly. I have edited the post to install the PhantomJS package from binaries provided by [ariya](https://bitbucket.org/ariya/phantomjs/downloads/)
+**Update:** This package is broken and seems to require bits of QT to function correctly. I have edited the post to install the PhantomJS package from binaries provided by [ariya](https://bitbucket.org/ariya/phantomjs/downloads
 
 Because the requirements of the web app only need the PhantomJS binary and nothing else fancy (like a listen port), we don't need to set up a separate container for PhantomJS, we can just install the package into the container to be used directly by the web application. The largest problem with this, is that the docker image is based on Debian version 8 (Jessie), rather than the current stable release (version 9, 'Stretch'). The PhantomJS package is only available in [jessie-backports](https://packages.debian.org/jessie-backports/phantomjs), whereas in stable, it's in the main package list.
 
@@ -80,7 +80,7 @@ Now I can build the resulting container and test locally, by pushing things into
 
 ### Build and publish to an Azure Container Registry
 
-I needed a place to store the resulting container artifact, I decided to use an [Azure Container Registry](https://azure.microsoft.com/en-gb/services/container-registry/) for this. I could have used the [Docker Hub](https://hub.docker.com/), but I thought it would be better to keep things in one place.
+I needed a place to store the resulting container artifact, I decided to use an [Azure Container Registry](https://azure.microsoft.com/en-gb/services/container-registry for this. I could have used the [Docker Hub](https://hub.docker.com, but I thought it would be better to keep things in one place.
 
 To deploy the container registry, i ran:
 
@@ -130,7 +130,7 @@ You will need to upload the files over FTP to this storage account. If you do th
 
 ## Final thoughts
 
-Because I am using the built in app service storage account, I tried getting some continuous integration magic working by setting up a trigger on commit for [Visual Studio Team Services](https://www.visualstudio.com/team-services/) to FTP files to the Web App storage to set a really nice development cycle up and running.
+Because I am using the built in app service storage account, I tried getting some continuous integration magic working by setting up a trigger on commit for [Visual Studio Team Services](https://www.visualstudio.com/team-services to FTP files to the Web App storage to set a really nice development cycle up and running.
 
 ![Visual Studio Team Services Error](../assets/img/vstsbuilderror.png)
 

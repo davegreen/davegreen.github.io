@@ -18,7 +18,7 @@ categories: [Projects]
 
 Assorted random snippets of code I have written and find useful.
 
-### [Timezone](https://www.powershellgallery.com/packages/Timezone/)
+### [Timezone](https://www.powershellgallery.com/packages/Timezone)
 
 A PowerShell module for getting and setting the system timezone, like tzutil (and uses tzutil), but for PowerShell! [Source (GitHub)](https://github.com/davegreen/PowerShell/tree/master/Modules/Timezone)
 

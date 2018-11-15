@@ -10,4 +10,4 @@ I'm making more of an effort to post useful snippets of PowerShell and other stu
 
 As I've improved with PowerShell, it's become easier to write generalised scripts, rather than highly targeted ones, so that I can solve similar problems, or share pieces of scripts around more easily.
 
-If you'd like to learn more about Windows PowerShell check out [PowerShell.org](http://powershell.org/wp/) and the [PowerScripting Podcast](http://powerscripting.wordpress.com/), they are nice friendly places that are easy to navigate and full to the brim with good content.
+If you'd like to learn more about Windows PowerShell check out [PowerShell.org](http://powershell.org/wp) and the [PowerScripting Podcast](http://powerscripting.wordpress.com), they are nice friendly places that are easy to navigate and full to the brim with good content.

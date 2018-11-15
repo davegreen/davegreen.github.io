@@ -78,4 +78,4 @@ Here's an example of part of my config file:
 
 You can tweak the file however you need, It seems the general recommendation is to remove anything you're not actively going to set, as this provides a more concise config file and makes it easier to track down issues.
 
-In the next part, I'll cover setting up the SCCM side of things now we are nearly ready to deploy the new settings and upgrade the BIOS. [Read on to Part 2](https://tookitaway.co.uk/2014-08-01/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-2/)!
+In the next part, I'll cover setting up the SCCM side of things now we are nearly ready to deploy the new settings and upgrade the BIOS. [Read on to Part 2](https://tookitaway.co.uk/2014-08-01/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-2)!

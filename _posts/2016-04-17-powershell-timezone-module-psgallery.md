@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Computers]
 ---
-Today, I published my first module to the [PowerShell gallery!](https://www.powershellgallery.com/packages/Timezone/)
+Today, I published my first module to the [PowerShell gallery!](https://www.powershellgallery.com/packages/Timezone)
 
 It's the fairly simple module I wrote to manage the timezone on the local machine, wrapping the tzutil command. It's all really come together over the last couple of days (I  fixed a bunch of problems by writing some proper tests for it!). I've also been using it to work with a lot of cool stuff with it like advanced parameter completion, psake and PSDeploy to streamline the testing and deployment.
 
