@@ -13,6 +13,7 @@ In this part, we'll cover putting the files we've got together in a couple of pa
 I've set up the files I need in the following hierarchy, and spread the BIOS configuration and update over two packages. You may decide to do it differently.
 
     SCCMSources\OSD\Packages\BIOSConfig\HP ProBook
+
         BiosConfigUtility.exe   (BIOS configuration utility - x86)
         BiosConfigUtility64.exe (BIOS configuration utility - x64)
         BIOSPW.bin              (Encrypted BIOS password)
@@ -20,6 +21,7 @@ I've set up the files I need in the following hierarchy, and spread the BIOS con
         ProBook6x70bConfig.cmd  (BIOS configuration command file)
 
     SCCMSources\OSD\Packages\BIOSUpdate\HP Probook
+    
         BIOSPW.bin              (Encrypted BIOS password)
         HPBIOSUPDREC.exe        (New BIOS update utility)
         hpqFlash.exe            (Old BIOS update utility)
