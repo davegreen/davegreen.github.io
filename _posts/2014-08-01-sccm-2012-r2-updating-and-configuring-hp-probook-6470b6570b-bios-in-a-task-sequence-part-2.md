@@ -14,7 +14,7 @@ I've set up the files I need in the following hierarchy, and spread the BIOS con
 
     SCCMSources\OSD\Packages\BIOSConfig\HP ProBook
 
-        BiosConfigUtility.exe   (BIOS configuration utility - x86)
+        BiosConfigUtility.exe   (BIOS configuration utility - x86)
         BiosConfigUtility64.exe (BIOS configuration utility - x64)
         BIOSPW.bin              (Encrypted BIOS password)
         ProBook6x70bConfig.cfg  (BIOS configuration settings)
