@@ -26,4 +26,4 @@ I've done some work to merge the two versions, which will give the script a lot 
 
 ## UPDATE 2
 
-Newer versions of the script are [here](http://tookitaway.co.uk/ad-shadow-groups-with-windows-powershell-an-update/). This post is kept as a reference to the first version of the script.
+Newer versions of the script are [here](https://tookitaway.co.uk/ad-shadow-groups-with-windows-powershell-an-update/). This post is kept as a reference to the first version of the script.

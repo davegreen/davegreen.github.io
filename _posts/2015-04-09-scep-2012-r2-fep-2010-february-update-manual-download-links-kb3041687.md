@@ -7,7 +7,7 @@ comments: true
 categories: [Computers]
 ---
 
-UPDATE: [The May download links are here.](http://tookitaway.co.uk/scep-2012-r2-fep-2010-may-update-manual-download-links-kb3049560/)
+UPDATE: [The May download links are here.](https://tookitaway.co.uk/scep-2012-r2-fep-2010-may-update-manual-download-links-kb3049560/)
 
 I recently noticed a few people looking around for the SCEP/FEP February update direct download links. I pulled these download links from SCCM 2012 R2, viewing the Content Information in the update view for KB3041687.
 
