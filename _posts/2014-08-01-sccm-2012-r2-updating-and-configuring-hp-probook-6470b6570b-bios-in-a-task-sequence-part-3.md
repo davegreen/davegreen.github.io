@@ -6,7 +6,7 @@ author: Dave Green
 comments: true
 categories: [Computers]
 ---
-If you’ve come to this post directly, it's probably useful for you to read through both [part 1](http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-1/) and [part 2](http://tookitaway.co.uk/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-2/)! If however you've already got that under your belt, read on…
+If you’ve come to this post directly, it's probably useful for you to read through both [part 1](http://tookitaway.co.uk/2014-07-29/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-1/) and [part 2](http://tookitaway.co.uk/2014-08-01/sccm-2012-r2-updating-and-configuring-hp-probook-6470b6570b-bios-in-a-task-sequence-part-2/)! If however you've already got that under your belt, read on…
 
 As a recap, you'll remember that I decided to set up two packages for the configuring and updating of the BIOS. Just in case you want a reference for the BIOS update portaion of the structure, here it is again.
 
