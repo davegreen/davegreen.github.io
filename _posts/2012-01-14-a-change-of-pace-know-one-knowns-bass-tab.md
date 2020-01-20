@@ -1,14 +1,14 @@
 ---
 layout: post
-title: A Change Of Pace - Know One Knowns Bass Tab
+title: A Change Of Pace - Know One Knows Bass Tab
 date: 2012-01-14 20:07
 author: Dave Green
 comments: true
 categories: [Music]
 ---
-Download the text file -  [A Change Of Pace - Know One Knowns](../assets/music/tabs/KOK.txt)
+Download the text file -  [A Change Of Pace - Know One Knows](../assets/music/tabs/KOK.txt)
 
-    Title: Know One Knowns
+    Title: Know One Knows
     Artist: A Change Of Pace
     Tuning: DADG
 
