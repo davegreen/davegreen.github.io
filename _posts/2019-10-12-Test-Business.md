@@ -23,4 +23,4 @@ The rest of the day was a blur of amazing sessions, speaking to amazing people a
 
 All in all, a magic day, many great people and one of the best days (and the best conference) I've ever been to!
 
-Major thanks to the organisers [Jonathan Medd](https://twitter.com/jonathanmedd), [Daniel Krebs](https://twitter.com/Dan1el42), [Ryan Yates](https://twitter.com/ryanyates1990) and all th other orgnisers and people that made this possible!
+Major thanks to the organisers [Jonathan Medd](https://twitter.com/jonathanmedd), [Daniel Krebs](https://twitter.com/Dan1el42), [Ryan Yates](https://twitter.com/ryanyates1990) and all the other people that made this possible!
