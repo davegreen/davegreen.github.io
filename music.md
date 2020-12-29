@@ -33,7 +33,7 @@ Nothing :(
 
 [Illusion Never Lies](https://tookitaway.co.uk/assets/music/IllusionNeverLies.mp3)
 
-### [Tom Bertram (Pop, Rock)](https://www.tombertram.co.uk)
+### [Tom Bertram](https://www.tombertram.co.uk) (Pop, Rock)
 
 - When: 2010-2011
 - Instruments: Bass Guitar, Backing Vocals
