@@ -14,7 +14,7 @@ categories: [Music]
 
 ## Current Bands
 
-A metal band - to be updated soon :)
+Nothing :(
 
 ## Previous Bands
 
