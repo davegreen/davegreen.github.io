@@ -12,8 +12,7 @@ Unfortunately, I hoped the ADMX template for managing SCEP 2012 that was mention
 
 As I've done previously, I pulled these download links from SCCM, viewing the Content Information in the update view for KB3049560.
 
-Here's the update, it appears to be the same for both FEP 2010 and SCEP 2012:
-[wsus.ds.download.windowsupdate.com/c/msdownload/update/software/crup/2015/05/updateinstall_a4deb3eebd3ac19f8b465097d818708a0e0d87c7.exe](http://wsus.ds.download.windowsupdate.com/c/msdownload/update/software/crup/2015/05/updateinstall_a4deb3eebd3ac19f8b465097d818708a0e0d87c7.exe)
+[Here's the update](https://wsus.ds.download.windowsupdate.com/c/msdownload/update/software/crup/2015/05/updateinstall_a4deb3eebd3ac19f8b465097d818708a0e0d87c7.exe), it appears to be the same for both FEP 2010 and SCEP 2012.
 
 These files are hosted by Microsoft and may disappear at any time!
 
