@@ -15,7 +15,7 @@ This problem of format shifting has been discussed on and off for years by vario
 
 There have been reports in the past (like the [Gowers Review](http://webarchive.nationalarchives.gov.uk/20100407010852/http://www.hm-treasury.gov.uk/gowers_review_index.htm)) that advocated allowing format shifting, to give people freedoms that citizens from other countries already enjoy, but over half of the recommendations Gowers put forward, less than half of them have been implemented.
 
-The newest review of Intellectual Property (IP) law, titled the [Hargreaves Review](http://www.ipo.gov.uk/ipreview.htm), also advocates making format shifting legal, but does not go as far as to also recommended other freedoms such as '[fair use](https://www.chamberofcommerce.org/digital-media-laws-for-small-businesses/#fair-use-using-the-likeness-of-another)'. The report eventually goes on to say:
+The newest review of Intellectual Property (IP) law, titled the [Hargreaves Review](https://webarchive.nationalarchives.gov.uk/ukgwa/20140603094438/http://www.ipo.gov.uk/ipreview.htm), also advocates making format shifting legal, but does not go as far as to also recommended other freedoms such as '[fair use](https://www.chamberofcommerce.org/digital-media-laws-for-small-businesses/#fair-use-using-the-likeness-of-another)'. The report eventually goes on to say:
 
     5.31 The Government should introduce an exception to allow individuals to make copies for their own and immediate family’s use on different media. Rights holders will be free to pursue whatever compensation the market will provide by taking account of consumers’ freedom to act in this way and by setting prices accordingly.
 
