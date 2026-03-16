@@ -1,8 +1,11 @@
 # CV - David James Green
 
 **Location:** Ardley, Bicester, Oxfordshire
+
 **Driving License:** Full, current
+
 **Email:** david.green@tookitaway.co.uk
+
 **Website:** This one!
 
 ## Profile
