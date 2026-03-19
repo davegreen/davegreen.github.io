@@ -1,4 +1,11 @@
-# CV - David James Green
+---
+layout: page
+title: CV
+author: Dave Green
+date: 2026-03-20
+comments: false
+categories: [CV]
+---
 
 **Location:** Ardley, Bicester, Oxfordshire
 
