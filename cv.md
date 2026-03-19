@@ -13,7 +13,7 @@
 
 ## Profile
 
-I am a knowledgeable Platform / Site Reliability Engineer with extensive experience designing, building and operating large-scale hybrid infrastructure platforms across Kubernetes, cloud, virtualisation, storage and event-streaming systems. My work combines technical leadership with hands-on engineering, enabling high-performing teams, improving reliability and building modern platform capabilities that scale with organisational needs.
+I am an experienced Lead Platform / Site Reliability Engineer with extensive experience designing, building and operating large-scale hybrid infrastructure platforms across Kubernetes, cloud, virtualisation, storage and event-streaming systems. My work combines technical leadership with hands-on engineering, enabling high-performing teams, improving reliability and building modern platform capabilities that scale with organisational needs.
 
 ## Key Skills
 
@@ -58,16 +58,16 @@ Lead a team of six engineers responsible for three foundational organisational p
 **Highlights**
 
 - Designed and operated a multi-site Kafka platform (Strimzi), handling millions of events per hour with multi-customer authentication, authorisation and replication.
-- Delivered a **petabyte-scale file storage transformation**, migrating many PB of data and retiring legacy systems.
+- Delivered a petabyte-scale file storage transformation, migrating many petabytes of data and retiring multiple legacy systems as part of the move.
 - Built deep automation and observability with dashboards, SLIs, alerts and runbooks.
 
 ### Principal Site Reliability Engineer (2020-2024)
 
-Owned the technical and strategic delivery of hybrid infrastructure systems, focusing on container orchestration and systems integration. Led an engineering team while managing their well-being, development, and operational workloads.
+Owned the technical and strategic delivery of hybrid infrastructure systems, focusing on container orchestration and systems integration. Led an engineering team while managing well-being, development and operational workloads.
 
 **Highlights**
 
-- Designed and deployed a **multi-cluster Kubernetes platform** across on-premises, cloud and remote sites with integrated DNS, secrets, monitoring, logging and CI/CD.
+- Designed and deployed a multi-cluster Kubernetes platform across on-premises, cloud and remote sites with integrated DNS, secrets, monitoring, logging and CI/CD.
 - Introduced product-based delivery approaches across teams, embedding SRE and platform engineering practices into the wider organisation.
 
 ### Digital Enterprise Applications Systems Engineer (2018-2020)
@@ -90,13 +90,15 @@ Worked as part of a 24x7x365 operations environment supporting a high-availabili
 
 Initially supported lecturers and students by assisting with complex technical topics and classroom technologies. Progressed into a 3rd-line engineering role with responsibility for backups, patching, security updates, and operational maintenance. Contributed to systems architecture and service provisioning to deliver scalable, reliable infrastructure to large, geographically distributed user groups using both traditional and virtualised platforms.
 
-### **Disking Computers - Computer Technician and Shop Manager (2004-2008)**
+### Disking Computers - Computer Technician and Shop Manager (2004-2008)
 
 Handled all aspects of retail computer workshop operation, including hardware diagnosis, repair and customer support. Managed day-to-day shop functions while ensuring reliable technical service delivery.
 
 ## Qualifications
 
 - City & Guilds Level 3 Award in Leadership & Management (ILM) - 2023
+- ITIL 4 Strategist Direct, Plan and Improve - 2022
+- ITIL 4 Foundation Certificate in IT Service Management - 2021
 - HND - Computing (Software Development), Chichester College (2005-2007)
 - National Diploma - Computing & Business, Chichester College (2003-2005)
 - 8 GCSEs, grade C or above - Bourne Community College
