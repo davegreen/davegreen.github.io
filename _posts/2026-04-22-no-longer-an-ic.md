@@ -11,7 +11,7 @@ I've never been an Integrated Circuit, but it's also been a while since I was an
 
 I like it, but it's a weird shift that's taken me way longer than I thought it would to really come to terms with.
 
-As a lot of my usual, more technical posts generally get eaten up by what I'm doing at work, which limits my ability to talk about them, I've decided to write more on the other parts of the job, whatever you call them, whether it's management, leadership, team-lead, or coordinator.
+As a lot of my usual, more technical posts generally get eaten up by what I'm doing at work, which limits my ability to talk about them. I've decided to write more on the other parts of the job, whatever you call them, whether it's management, leadership, team-lead, or coordinator.
 
 - ~~Technology~~ (For the most part)
 - +Process
