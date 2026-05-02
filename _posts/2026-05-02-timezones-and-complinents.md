@@ -43,3 +43,5 @@ Instead of outsourcing to other people, outsourced brainpower, decision-making a
 I will figure out what it is that seems to shield me from some of this and I'll shout it from the rooftops, before the dead internet takes us all!
 
 Maybe I just don't trust easy answers?
+
+
