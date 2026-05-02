@@ -32,7 +32,7 @@ Now I hear the other side of this opinion a fair bit, I don't get it, or I haven
 - [Tech Won't Save Us](https://open.spotify.com/show/3UhsI7s4bkH1FcMZI5u9iD)
 - [Kill the Computer](https://open.spotify.com/show/6jH7ZL5LkzFuBtv7R9TgDg)
 - [System Crash (Paused)](https://open.spotify.com/show/2cMtc4Pl3qlESeQy1M6u9a)
-- [TRASHFUTURE](https://open.spotify.com/show/4loPiV9XWjVOitg2XfzK7Q) [This one's insane!](https://www.patreon.com/posts/scaffold-to-152979767)
+- [TRASHFUTURE](https://open.spotify.com/show/4loPiV9XWjVOitg2XfzK7Q) ([This episode is insane!](https://www.patreon.com/posts/scaffold-to-152979767))
 
 I don't think it is an inoculation (although it might be like antibiotics, flushing the system if you need it), I have colleagues and friends that have the same sort of opinions and they've not heard of these.
 
@@ -43,5 +43,3 @@ Instead of outsourcing to other people, outsourced brainpower, decision-making a
 I will figure out what it is that seems to shield me from some of this and I'll shout it from the rooftops, before the dead internet takes us all!
 
 Maybe I just don't trust easy answers?
-
-
